@@ -9,8 +9,7 @@ function MyApp({ Component, pageProps }) {
         herfFacebook='https://www.facebook.com/profile.php?id=100086806926973'
         HerfDash='#'
         Herfabout='/about'
-        HerfContact='/Contact'
-        HerfService='/Services'
+        HerfService='/Team'
         herflogoLink={"/"}
         herflogo='/images/logo.png'
       />

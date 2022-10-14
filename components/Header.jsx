@@ -50,9 +50,6 @@ function Header(props) {
             <h5 className='duration-500 hover:text-gray-500'>Our Team</h5>
           </Link>
 
-          <Link href={props.HerfContact} passHref>
-            <h5 className='duration-500 hover:text-gray-500'>Contact</h5>
-          </Link>
         </div>
         <div className='flex pt-2  text-gray-200   gap-4 justify-end mx-8'>
           <div
@@ -166,13 +163,6 @@ function Header(props) {
           </Link>
         </div>
 
-        <div className=' select-none mx-12 cursor-pointer  m-3 mb-5 text-center lg:hidden'>
-          <Link className='text-gray-300' href={props.HerfContact} passHref>
-            <div className='  hover:bg-gray-800/40 duration-300  py-2  text-xl font-semibold text-gray-300 rounded-xl'>
-              Contact
-            </div>
-          </Link>
-        </div>
         <div className=' select-none mx-12 cursor-pointer  m-3 text-center lg:hidden'>
           <Link className='text-gray-300' href={props.HerfDash} passHref>
             <div className='bg-gray-300 justify-center flex  hover:bg-red-400 duration-300 pt-2 text-xl font-semibold text-gray-900 rounded-xl'>

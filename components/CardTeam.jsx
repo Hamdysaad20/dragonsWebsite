@@ -42,12 +42,15 @@ function cardTeam(props) {
               objectFit='cover'
             />
           </div>
-          <div className='bg-gray-200  text-gray-900 absolute rotateonhover15  duration-500 w-full bottom-[20px] h-[150px]'>
+          <div className='bg-gray-200  text-gray-900 absolute rotateonhover15text  duration-500 w-full bottom-[20px] h-[150px]'>
             <div
               style={{ fontFamily: "tatris", width: "400" }}
               className='text-gray-900  relative text-left h-full'>
               <h1 className='text-3xl font-bold pl-2 p-1'>{props.name}</h1>
               <h1 className='text-lg font-bold pl-2 p-1 pt-0'>{props.work}</h1>
+              <h1 className='text-md text-blue-600 font-bold pl-2 p-1 pt-0'>
+                {props.Pos}
+              </h1>
 
               <div className='flex gap-2 justify-center  pl-2 absolute bottom-4'>
                 <div className='duration-500 mt-1 active:scale-95  hover:text-gray-400'>
