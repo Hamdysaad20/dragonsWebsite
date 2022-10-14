@@ -6,7 +6,7 @@ import hand from "../public/JSON/68978-3d-hand.json";
 function FormSideSection() {
   return (
     <div className='lg:w-[500px] relative  h-full flex justify-center mx-auto min-w-[300px]'>
-      <div className='w-[200px] hover:scale-90 duration-500 lg:mb-[100px] lg:w-[500px]'>
+      <div className='w-[200px] hover:scale-90 duration-1000 lg:mb-[100px] lg:w-[500px]'>
         <Lottie animationData={hand} />{" "}
         <div>
           <h1
