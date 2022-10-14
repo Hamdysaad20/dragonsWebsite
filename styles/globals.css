@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Poppins-Bold";
+  font-weight: 400;
+  src: url("../public/fonts/Poppins-SemiBold.ttf") format("truetype");
+
+  font-weight: 600;
+
+  font-style: normal;
+}
+input {
+  accent-color: #ff4d6e;
+}
+
 html,
 body {
   padding: 0;
@@ -21,6 +37,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background-color: rgb(17 24 39);
   }
 }
