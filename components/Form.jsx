@@ -283,7 +283,9 @@ const ContactUs = () => {
             <div className='flex md:flex-none flex-wrap w-full relative mb-2 text-sm rounded-md  px-2 gap-1 bg-gray-700/20'>
               <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 w-12 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
-                <label className='cursor-pointer font-semibold' htmlFor='one'>
+                <label
+                  className='cursor-pointer  px-7 font-semibold'
+                  htmlFor='one'>
                   <input
                     className='mt-[5px]'
                     type='radio'
@@ -297,7 +299,9 @@ const ContactUs = () => {
               </div>
               <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 w-12 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
-                <label className='cursor-pointer font-semibold' htmlFor='two'>
+                <label
+                  className='cursor-pointer w-full  font-semibold'
+                  htmlFor='two'>
                   <input
                     className='mt-[5px]'
                     type='radio'
@@ -311,7 +315,9 @@ const ContactUs = () => {
               </div>
               <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1 w-12 justify-center mx-auto gap-1 flex '>
                 {" "}
-                <label className='cursor-pointer font-semibold' htmlFor='three'>
+                <label
+                  className='cursor-pointer w-full font-semibold'
+                  htmlFor='three'>
                   <input
                     className='mt-[5px]'
                     type='radio'
@@ -332,7 +338,9 @@ const ContactUs = () => {
               {" "}
               <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 px-3 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
-                <label className='cursor-pointer font-semibold' htmlFor='BA'>
+                <label
+                  className='cursor-pointer px-7 font-semibold'
+                  htmlFor='BA'>
                   <input
                     className='mt-[5px]'
                     type='radio'
@@ -346,7 +354,9 @@ const ContactUs = () => {
               </div>
               <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 px-3 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
-                <label className='cursor-pointer font-semibold' htmlFor='IT'>
+                <label
+                  className='cursor-pointer px-7 font-semibold'
+                  htmlFor='IT'>
                   <input
                     className='mt-[5px]'
                     type='radio'
