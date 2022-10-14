@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import styles from "../styles/Home.module.css";
 import Lottie from "lottie-react";
 
 import celebrate from "../public/JSON/celebrate.json";
