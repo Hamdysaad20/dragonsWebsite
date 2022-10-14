@@ -18,10 +18,10 @@ function Header(props) {
   const toggler = () => {
     setBurgerMenu(!burgerMenu);
     var x = document.getElementById("togglerDiv");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    if (x.style.display === "none") {
+      x.style.display = "block";
     } else {
-      x.style.display = "block ";
+      x.style.display = "none ";
     }
   };
   return (
@@ -176,7 +176,7 @@ function Header(props) {
         <div className=' select-none mx-12 cursor-pointer  m-3 text-center lg:hidden'>
           <Link className='text-gray-300' href={props.HerfDash} passHref>
             <div className='bg-gray-300 justify-center flex  hover:bg-red-400 duration-300 pt-2 text-xl font-semibold text-gray-900 rounded-xl'>
-              <span>Dashboard</span>
+              <span>Join Us</span>
             </div>
           </Link>
         </div>

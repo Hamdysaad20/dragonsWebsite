@@ -309,3 +309,7 @@ section {
     box-shadow: 0 0 100px 15px #f4f6ad;
   }
 }
+
+.TogglerDisplay {
+  display: none;
+}
