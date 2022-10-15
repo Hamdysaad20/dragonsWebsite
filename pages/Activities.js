@@ -43,12 +43,42 @@ function Activities() {
           },
         }}>
         <div className='w-full flex-wrap gap-3 mb-20 mt-12 max-w-[1400px] flex mx-auto justify-center '>
-          <CardActiv name='Frontend Development' jsonSVG={FE} isTech={true} />
-          <CardActiv name='Backend Development' jsonSVG={be} isTech={true} />
-          <CardActiv name='Human Resource' jsonSVG={hr} isTech={false} />
-          <CardActiv name='Media' jsonSVG={media} isTech={false} />
-          <CardActiv name='Public Relations ' jsonSVG={pr} isTech={false} />
-          <CardActiv name='Problem Solving ' jsonSVG={ps} isTech={true} />
+          <CardActiv
+            name='Frontend Development'
+            pass={"/frontend"}
+            jsonSVG={FE}
+            isTech={true}
+          />
+          <CardActiv
+            name='Backend Development'
+            pass={"/backend"}
+            jsonSVG={be}
+            isTech={true}
+          />
+          <CardActiv
+            name='Human Resource'
+            pass={"/HR"}
+            jsonSVG={hr}
+            isTech={false}
+          />
+          <CardActiv
+            name='Media'
+            jsonSVG={media}
+            pass={"/Media"}
+            isTech={false}
+          />
+          <CardActiv
+            name='Public Relations '
+            pass={"/PR"}
+            jsonSVG={pr}
+            isTech={false}
+          />
+          <CardActiv
+            name='Problem Solving '
+            pass={"/PS"}
+            jsonSVG={ps}
+            isTech={true}
+          />
         </div>{" "}
         <div className='h-[250px] rotate-180 z-30 hidden md:block hover:opacity-20 opacity-40 hover:scale-90 duration-500 absolute bottom-1 left-0 w-[250px]'>
           <Lottie animationData={dragchil} />{" "}

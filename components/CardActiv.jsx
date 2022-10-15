@@ -15,6 +15,7 @@ function CardActiv(props) {
   ];
   return (
     <div>
+     <Link href={props.pass} passHref>
       <div className='relative h-[420px] px-3 max-w-[320px] justify-around mx-auto grid place-content-center'>
         <div
           className={`${
@@ -38,6 +39,7 @@ function CardActiv(props) {
           </div>
         </div>
       </div>
+      </Link>
     </div>
   );
 }
