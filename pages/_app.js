@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
       <Header
         className='select-none'
         herfFacebook='https://www.facebook.com/profile.php?id=100086806926973'
+        herfGithub='https://github.com/Dragonsfu'
         HerfDash='#'
         Herfabout='/about'
         HerfService='/Team'
