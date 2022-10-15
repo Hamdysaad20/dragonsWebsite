@@ -10,11 +10,16 @@ import hr from "../public/JSON/hr";
 import media from "../public/JSON/media";
 import pr from "../public/JSON/pr";
 import ps from "../public/JSON/ps";
+import main from "../public/JSON/activMain.json";
 
 function Activities() {
   return (
     <div className='pt-20  relative flex justify-center mx-auto flex-col max-w-[1400px]'>
       <div class='grid mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
+        <div className='max-w-[500px]'>
+          {" "}
+          <Lottie animationData={main} />{" "}
+        </div>
         <div className='h-[250px] z-30 rotate-90 hover:rotate-45  hidden md:block  hover:opacity-90 hover:scale-90 opacity-40 duration-500 absolute top-32 right-0 w-[250px]'>
           <Lottie animationData={dragchil} />{" "}
         </div>{" "}
@@ -22,7 +27,7 @@ function Activities() {
           <Lottie animationData={dragchil} />{" "}
         </div>{" "}
         <p class={`${"z-20"}${Styles.pHeaderTeam}`}>
-          <span class={Styles.SpanHeaderTeam}>Our Talented warriors </span>
+          <span class={Styles.SpanHeaderTeam}> Our main Activities </span>
         </p>
       </div>
 
