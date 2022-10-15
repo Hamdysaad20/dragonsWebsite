@@ -25,26 +25,38 @@ function Team() {
           <CardTeam
             herfFacebook='https://www.facebook.com/hamdysaad266/'
             herfTwitter='https://www.facebook.com/profile.php?id=100086806926973'
+            herfLinkedIn='https://www.linkedin.com/in/hamdysaad/'
             name='Hamdy Saad'
             work='Sr.Frontend Engineer'
             image='/images/1.jpg'
-            Pos="Head of Frontend"
+            Pos='Head of Frontend'
           />
           <CardTeam
             herfFacebook='https://www.facebook.com/profile.php?id=100010052953257'
             herfTwitter='https://www.facebook.com/profile.php?id=100086806926973'
+            herfLinkedIn='https://www.linkedin.com/in/hatem-ali-hassan-042798225/'
             name='Hatem Ali'
             work='Frontend Engineer'
             image='/images/2.png'
-            Pos="CTO"
+            Pos='CTO'
           />
           <CardTeam
             herfFacebook='https://www.facebook.com/profile.php?id=100012624398938'
             herfTwitter='https://www.facebook.com/profile.php?id=100086806926973'
+            herfLinkedIn='https://www.linkedin.com/in/salaheldin-mohamed/'
             name='Salah Mohamed'
             work='Backend Engineer'
             image='/images/3.png'
-            Pos="Head of Java"
+            Pos='Head of Java'
+          />
+          <CardTeam
+            herfFacebook='https://www.facebook.com/eslam.mohamedelabd.1'
+            herfTwitter='https://www.facebook.com/profile.php?id=100086806926973'
+            herfLinkedIn='https://www.linkedin.com/in/eslam-mohamed-moawed/'
+            name='Eslam Mohammed'
+            work='Backend Engineer'
+            image='/images/4.jpg'
+            Pos='Head of Backend'
           />
         </div>{" "}
       </motion.div>
