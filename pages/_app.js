@@ -8,8 +8,9 @@ function MyApp({ Component, pageProps }) {
         className='select-none'
         herfFacebook='https://www.facebook.com/profile.php?id=100086806926973'
         herfGithub='https://github.com/Dragonsfu'
-        HerfDash='#'
+        HerfDash='/'
         Herfabout='/about'
+        HerfActivity="/Activities"
         HerfService='/Team'
         herflogoLink={"/"}
         herflogo='/images/logo.png'

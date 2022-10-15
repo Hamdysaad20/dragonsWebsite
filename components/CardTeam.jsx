@@ -7,19 +7,7 @@ function cardTeam(props) {
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
-  // function randomArrayShuffle(array) {
-  //   var currentIndex = array.length,
-  //     temporaryValue,
-  //     randomIndex;
-  //   while (0 !== currentIndex) {
-  //     randomIndex = Math.floor(Math.random() * currentIndex);
-  //     currentIndex -= 1;
-  //     temporaryValue = array[currentIndex];
-  //     array[currentIndex] = array[randomIndex];
-  //     array[randomIndex] = temporaryValue;
-  //   }
-  //   return array;
-  // }
+
   let bgcardColor = [
     "bg-[#90BB94]",
     "bg-[#E2AD5E]",
@@ -33,7 +21,7 @@ function cardTeam(props) {
           className={`${
             bgcardColor[getRandomInt(4)]
           }${" h-[400px] w-[300px] "}`}>
-          <div className='border-4 border-dashed absolute h-[400px] select-none hover:backdrop-blur-sm w-[300px] rotateonhover15 duration-500 border-gray-800 right-0 bottom-0'>
+          <div className='border-4 border-dashed hover:scale-105 absolute h-[400px] select-none hover:backdrop-blur-sm w-[300px] rotateonhover15 duration-500 border-gray-800 right-0 bottom-0'>
             <Image
               src={props.image}
               alt=''

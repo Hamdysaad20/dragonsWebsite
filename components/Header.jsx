@@ -47,7 +47,10 @@ function Header(props) {
         </Link>
         <div className='lg:flex pt-3 hidden text-stone-100 select-none cursor-pointer  gap-4 justify-center mx-8'>
           <Link href={props.HerfService} passHref>
-            <h5 className='duration-500 hover:text-gray-500'>Our Team</h5>
+            <h5 className='duration-500 hover:text-gray-500'>Team</h5>
+          </Link>
+          <Link href={props.HerfActivity} passHref>
+            <h5 className='duration-500 hover:text-gray-500'>Activities</h5>
           </Link>
         </div>
         <div className='flex pt-2  text-gray-200   gap-4 justify-end mx-8'>
@@ -216,15 +219,28 @@ function Header(props) {
         className=' absolute TogglerDisplay lg:hidden uppercase h-screen lg:h-0 right-0 rounded-b-xl  max-w-[600px]  bg-gray-900  w-full'>
         <div className=' select-none mx-12  cursor-pointer  m-3 text-center lg:hidden'>
           <Link className='text-gray-300' href={props.HerfService} passHref>
-            <div className='  hover:bg-gray-800/40 duration-300 py-2 text-xl font-semibold text-gray-300 rounded-xl'>
-              Our Team
+            <div
+              onClick={toggler}
+              className='  hover:bg-gray-800/40 duration-300 py-2 text-xl font-semibold text-gray-300 rounded-xl'>
+             Team
+            </div>
+          </Link>
+        </div>
+        <div className=' select-none mx-12  cursor-pointer  m-3 text-center lg:hidden'>
+          <Link className='text-gray-300' href={props.HerfActivity} passHref>
+            <div
+              onClick={toggler}
+              className='  hover:bg-gray-800/40 duration-300 py-2 text-xl font-semibold text-gray-300 rounded-xl'>
+              Activities
             </div>
           </Link>
         </div>
 
         <div className=' select-none mx-12 cursor-pointer  m-3 text-center lg:hidden'>
           <Link className='text-gray-300' href={props.HerfDash} passHref>
-            <div className='bg-gray-300 justify-center flex  hover:bg-red-400 duration-300 pt-2 text-xl font-semibold text-gray-900 rounded-xl'>
+            <div
+              onClick={toggler}
+              className='bg-gray-300 justify-center flex  hover:bg-red-400 duration-300 pt-2 text-xl font-semibold text-gray-900 rounded-xl'>
               <span>Join Us</span>
             </div>
           </Link>

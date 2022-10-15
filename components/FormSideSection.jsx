@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
 import Lottie from "lottie-react";
 import hand from "../public/JSON/68978-3d-hand.json";
 

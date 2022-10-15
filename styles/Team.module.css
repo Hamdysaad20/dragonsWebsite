@@ -5,3 +5,7 @@
 
   padding: 1.5em 0em;
 }
+
+.TogglerDisplay {
+  display: none;
+}
