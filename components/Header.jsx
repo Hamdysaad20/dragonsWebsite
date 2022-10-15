@@ -17,7 +17,7 @@ function Header(props) {
 
   const toggler = () => {
     setBurgerMenu(!burgerMenu);
-    var x = document.getElementById("togglerDiv");
+    let x = document.getElementById("togglerDiv");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
