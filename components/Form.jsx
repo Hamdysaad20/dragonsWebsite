@@ -23,12 +23,46 @@ const ContactUs = () => {
         form.current,
         "icWEtEN3OYScLYf9J"
       )
+
       .then(
         (result) => {
           console.log(result.text);
           router.push("/Done");
         },
         (error) => {
+          emailjs
+            .sendForm(
+              "service_k32wzko",
+              "template_t135n4d",
+              form.current,
+              "QdrzUrgtoKaIrswMh"
+            )
+            .then(
+              (result) => {
+                console.log(result.text);
+                router.push("/Done");
+              },
+              (error) => {
+                emailjs
+                  .sendForm(
+                    "service_4yf9y8k",
+                    "template_h07qubn",
+                    form.current,
+                    "h9TYZnKkm7b5NJjfT"
+                  )
+                  .then(
+                    (result) => {
+                      console.log(result.text);
+                      router.push("/Done");
+                    },
+                    (error) => {
+                      console.log(error.text);
+                    }
+                  );
+
+                console.log(error.text);
+              }
+            );
           console.log(error.text);
         }
       );

@@ -42,7 +42,7 @@ function Media() {
           . ●
           التصميم ليه مبادئ منها: Unity, Balance, Dominance, Hierarchy
           . ● أكيد
-          محتاج برامج تشتغل عليها أفضلهم: Adobe Photoshop, Adobe Illustrator.
+          محتاج برامج تشتغل عليها أفضلهم: Adobe Photoshop, Adobe Illustrator.
         </h1>
       </div>
     </div>
