@@ -8,7 +8,7 @@ function Done() {
     setTimeout(() => {
       const { pathname } = Router;
       Router.push("/");
-    }, 2000);
+    }, 5000);
   }, []);
   const lottieRef = useRef();
   async function hoverevent() {
@@ -22,7 +22,11 @@ function Done() {
       <div className=' flex justify-center mx-auto'>
         {" "}
         <div className='z-10 h-[700px] w-[700px] grid place-content-center relative place-items-center'>
-          {" "}
+          <h1
+            style={{ fontFamily: "Poppins-Bold", width: "400" }}
+            className='font-medium text-2xl text-center  max-w-[400px] '>
+            Redirect in 5 seconds ...{" "}
+          </h1>
           <Lottie
             onMouseOver={hoverevent}
             onMouseLeave={hovereventends}
