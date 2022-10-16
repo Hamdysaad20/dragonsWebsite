@@ -1,8 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Lottie from "lottie-react";
+import Router from "next/router";
 
 import celebrate from "../public/JSON/celebrate.json";
 function Done() {
+  useEffect(() => {
+    setTimeout(() => {
+      const { pathname } = Router;
+      Router.push("/");
+    }, 2000);
+  }, []);
   const lottieRef = useRef();
   async function hoverevent() {
     lottieRef.current.setSpeed(0.3);
