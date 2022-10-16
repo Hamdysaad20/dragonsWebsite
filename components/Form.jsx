@@ -11,11 +11,12 @@ const ContactUs = () => {
   const [messageRing, setmessageRing] = useState(false);
   const [number, setNumber] = useState(false);
   const [ID, setID] = useState(false);
+  const [btnIsActive, setbtnIsActive] = useState(true);
 
   const [count, setCount] = useState(0);
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setbtnIsActive(false);
     emailjs
       .sendForm(
         "service_4irr0gp",
@@ -432,11 +433,21 @@ const ContactUs = () => {
               {count}/150
             </div>
           </div>
-          <input
-            type='submit'
-            value='Send'
-            className='w-full max-w-[200px] m-2 duration-300 select-none bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-400/90 focus:outline-none focus:shadow-outline'
-          />
+
+          {btnIsActive ? (
+            <input
+              type='submit'
+              value='Send'
+              className='w-full max-w-[200px] m-2 duration-300 select-none bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-400/90 focus:outline-none focus:shadow-outline'
+            />
+          ) : (
+            <input
+              type='submit'
+              value='Send'
+              className='w-full max-w-[200px] m-2 duration-300 select-none bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-400/90 focus:outline-none focus:shadow-outline'
+              disabled
+            />
+          )}
         </div>
       </form>
     </div>
