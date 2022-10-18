@@ -180,7 +180,7 @@ const ContactUs = () => {
               <div className=' cursor-not-allowed select-none  duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
                 <label
-                  className='cursor-pointer font-semibold opacity-25'
+                  className='cursor-not-allowed font-semibold opacity-25'
                   htmlFor='HR'>
                   {" "}
                   <input
