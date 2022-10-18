@@ -177,9 +177,11 @@ const ContactUs = () => {
             {" "}
             <p className='my-2 font-semibold'>Choose a Team :*</p>
             <div className='flex md:flex-none flex-wrap w-full relative mb-2 text-sm rounded-md  px-2 gap-1 bg-gray-700/20'>
-              <div className='hover:bg-yellow-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
+              <div className=' cursor-not-allowed select-none  duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
-                <label className='cursor-pointer font-semibold' htmlFor='HR'>
+                <label
+                  className='cursor-pointer font-semibold opacity-25'
+                  htmlFor='HR'>
                   {" "}
                   <input
                     className='mt-[5px]'
@@ -188,6 +190,7 @@ const ContactUs = () => {
                     id='HR'
                     value='HR'
                     required
+                    disabled
                   />{" "}
                   HR(Human Resources)
                 </label>
