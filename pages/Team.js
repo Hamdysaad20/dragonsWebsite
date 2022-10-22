@@ -43,7 +43,7 @@ function Team() {
             name='Hamdy Saad'
             work='Sr.Frontend Engineer'
             image='/images/1.jpg'
-            Pos='Head of Frontend'
+            Pos='co-founder/CTO'
           />
           <CardTeam
             herfFacebook='https://www.facebook.com/profile.php?id=100010052953257'
@@ -52,7 +52,7 @@ function Team() {
             name='Hatem Ali'
             work='Frontend Engineer'
             image='/images/2.png'
-            Pos='CTO'
+            Pos='co-founder/CEO'
           />
           <CardTeam
             herfFacebook='https://www.facebook.com/profile.php?id=100012624398938'
@@ -61,7 +61,7 @@ function Team() {
             name='Salah Mohamed'
             work='Backend Engineer'
             image='/images/3.png'
-            Pos='Head of Java'
+            Pos='co-founder/Head Java'
           />
           <CardTeam
             herfFacebook='https://www.facebook.com/eslam.mohamedelabd.1'
