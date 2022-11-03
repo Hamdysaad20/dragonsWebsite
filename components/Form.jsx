@@ -70,7 +70,14 @@ const ContactUs = () => {
   };
 
   return (
-    <div>
+    <div className='relative'>
+      <div className='absolute w-full h-full bg-gray-700/20 backdrop-blur-sm rounded-lg z-40'>
+        <div className=' grid place-items-center'>
+          <h1 className='text-gray-50 mt-[20%] text-center  md:text-xl lg:text-2xl text-lg font-bold'>
+            The form is closed ... thank you 😊
+          </h1>
+        </div>
+      </div>
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -78,7 +85,7 @@ const ContactUs = () => {
         <h4
           style={{ fontFamily: "Poppins-Bold", width: "400" }}
           className='px-1 pb-2 text-gray-400  text-center  md:text-xl lg:text-2xl text-lg font-bold'>
-          Simple Information To Get Started😊
+          Simple Information To Get Started
         </h4>
         <div
           style={{ fontFamily: "Poppins-Bold", width: "400" }}
