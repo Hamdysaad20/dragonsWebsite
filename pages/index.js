@@ -84,7 +84,7 @@ export default function Home() {
       </div>
 
       </motion.div>
-      <div className="absolute left-0 right-0  bottom-0">
+      <div className="absolute left-0 right-0 lg:hidden bottom-0">
       <div className="mx-auto flex rotate-90 h-80 w-40  overflow-hidden justify-center">
       <Image
                   className='relative z-20  bounce-2 box2  '
