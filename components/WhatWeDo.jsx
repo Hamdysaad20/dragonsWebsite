@@ -36,8 +36,7 @@ function WhatWeDo(props) {
           alt='Event Image'
           height='530'
           width='730'     
-          placeholder='blur'
-          blurDataURL={`/_next/image?url=${"/Images/eventPhoto1.png"}&w=16&q=1`}     
+        
         />
       </div>
     </div>

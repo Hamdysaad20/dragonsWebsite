@@ -84,14 +84,13 @@ export default function Home() {
       </div>
 
       </motion.div>
-      <div className="absolute left-0 right-0 bottom-0">
-      <div className="mx-auto flex rotate-90  justify-center">
+      <div className="absolute left-0 right-0  bottom-0">
+      <div className="mx-auto flex rotate-90 h-80 w-40  overflow-hidden justify-center">
       <Image
                   className='relative z-20  bounce-2 box2  '
                   src={"/images/line.png"}
                   alt='Header Image'
-                  height='440'
-                  width='240'
+layout="fill"
                   placeholder='blur'
                   blurDataURL={`/_next/image?url=/ico/S1.png&w=16&q=1`}
                   priority
@@ -154,8 +153,8 @@ export default function Home() {
 
         </div>{" "}
        
-<div className="relative">
-<div className="absolute right-2 -top-[130px] sepia-0 backdrop-opacity-95 ">
+<div className="relative pt-20 ">
+<div className="absolute right-2 -top-[50px]  sepia-0 backdrop-opacity-95 ">
       <Image
                   className='relative z-20   bounce-2 box2  '
                   src={"/images/dragon2.png"}
