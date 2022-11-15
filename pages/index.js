@@ -200,9 +200,9 @@ export default function Home() {
                 </span>,
                 "  ,and See What Happens🚀",
               ]}
-              sec2Image='/Images/eventPhoto1.png'
               ActionButton='Join Us Now'
               action='/Join'
+
             />
           </div>
         </motion.div>
