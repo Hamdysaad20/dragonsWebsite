@@ -38,6 +38,7 @@ function WhatWeDo(props) {
           width='730'
           placeholder='blur'
           blurDataURL={`/_next/image?url=${props.sec2Image}&w=16&q=1`}
+          
         />
       </div>
     </div>
