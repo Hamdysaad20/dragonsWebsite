@@ -33,12 +33,9 @@ function WhatWeDo(props) {
         <Image
           className='relative  bounce-2 box2 '
           src={props.sec2Image}
-          alt='Developers Image'
+          alt='EVENT Image'
           height='530'
-          width='730'
-          placeholder='blur'
-          blurDataURL={`/_next/image?url=${props.sec2Image}&w=16&q=1`}
-          
+          width='730'          
         />
       </div>
     </div>
