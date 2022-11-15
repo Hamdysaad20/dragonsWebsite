@@ -8,12 +8,13 @@ function MyApp({ Component, pageProps }) {
         className='select-none'
         herfFacebook='https://www.facebook.com/profile.php?id=100086806926973'
         herfGithub='https://github.com/Dragonsfu'
-        HerfDash='/'
+        HerfDash='/Join'
         Herfabout='/about'
-        HerfActivity="/Activities"
+        HerfActivity='/Activities'
         HerfService='/Team'
         herflogoLink={"/"}
         herflogo='/images/logo.png'
+        herflogo2='/images/logotext.png'
       />
       <Component {...pageProps} />
       <div id='wrap'>

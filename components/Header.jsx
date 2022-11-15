@@ -33,16 +33,28 @@ function Header(props) {
       }>
       <div className='px-4  grid grid-cols-3 py-3 max-w-[1400px] mx-auto  w-full    h-[70px]'>
         <Link href={props.herflogoLink} passHref>
-          <div className='mt-2  select-none cursor-pointer '>
+          <div className='mt-2 flex gap-1 hover:opacity-50  duration-700  select-none cursor-pointer '>
             <Image
-              className='hover:opacity-50   duration-700'
+              className='hover:animate-spin duration-500'
               src={props.herflogo}
               alt='Dragons'
-              height='36'
-              width='110'
+              height='50'
+              width='50'
               loading='eager'
               quality={100}
-            />
+            />{" "}
+            <div className='pt-2 '>
+              <Image
+                className='  '
+                src={props.herflogo2}
+                alt='Dragons'
+                height='30'
+                width='120'
+                objectFit='fill'
+                loading='eager'
+                quality={100}
+              />{" "}
+            </div>
           </div>
         </Link>
         <div className='lg:flex pt-3 hidden text-stone-100 select-none cursor-pointer  gap-4 justify-center mx-8'>
@@ -222,7 +234,7 @@ function Header(props) {
             <div
               onClick={toggler}
               className='  hover:bg-gray-800/40 duration-300 py-2 text-xl font-semibold text-gray-300 rounded-xl'>
-             Team
+              Team
             </div>
           </Link>
         </div>
