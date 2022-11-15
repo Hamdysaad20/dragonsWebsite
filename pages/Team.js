@@ -44,7 +44,7 @@ function Team() {
             herfGithub='https://github.com/Hamdysaad20'
             name='Hamdy Saad'
             work='Sr.Frontend Engineer'
-            image='/images/1.jpg'
+            image='/images/1.jpeg'
             Pos='co-founder/CTO'
           />
           <CardTeam
@@ -82,6 +82,15 @@ function Team() {
             image='/images/6.jpeg'
             Pos='PR Team (High board)'
           />
+                             <CardTeam
+         
+           
+         name='Maryam Mahmoud'
+         image='/images/13.jpeg'
+         Pos='Media Team (High board)'
+         herfFacebook= "https://www.facebook.com/profile.php?id=100073430179534"
+         herfLinkedIn="https://www.linkedin.com/in/maryam-mahmoud-3-9203b9257"
+       /> 
                      <CardTeam
          
            
@@ -95,6 +104,7 @@ function Team() {
          name='Mahmoud Sofy'
          image='/images/11.jpeg'
          Pos='Media Team (High board)'
+         herfFacebook="https://www.facebook.com/profile.php?id=100058382085713"
        />
             <CardTeam
          
@@ -102,6 +112,7 @@ function Team() {
          name='Reham Bakri'
          image='/images/8.jpg'
          Pos='Media Team (High board)'
+         herfLinkedIn= "https://www.linkedin.com/in/reham-baki-6a98a221a"
        />            <CardTeam
          
            
