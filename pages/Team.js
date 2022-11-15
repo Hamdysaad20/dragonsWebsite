@@ -121,7 +121,7 @@ function Team() {
            
          name='Marina Mamdouh'
          image='/images/12.jpeg'
-         Pos='HR Team (High board)'
+         Pos='PR Team (High board)'
        />
         </div>{" "}
         <div className='h-[250px] rotate-180 z-30 hidden md:block hover:opacity-20 opacity-40 hover:scale-90 duration-500 absolute bottom-1 left-0 w-[250px]'>
