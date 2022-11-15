@@ -5,6 +5,8 @@ import Styles from "../styles/Team.module.css";
 import Lottie from "lottie-react";
 import dragchil from "../public/JSON/dragchil.json";
 function Team() {
+
+  
   return (
     <div className='pt-20  relative flex justify-center mx-auto flex-col max-w-[1400px]'>
       <div class='grid mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
@@ -51,7 +53,7 @@ function Team() {
             herfGithub='https://github.com/Hatem2002'
             name='Hatem Ali'
             work='Frontend Engineer'
-            image='/images/2.png'
+            image='/images/2.jpeg'
             Pos='co-founder/CEO'
           />
           <CardTeam
@@ -72,6 +74,55 @@ function Team() {
             image='/images/4.jpg'
             Pos='Head of Backend'
           />
+           <CardTeam
+            herfFacebook='https://www.facebook.com/rana.ezat.22'
+            herfLinkedIn='https://www.linkedin.com/in/rana-muhammad-b77276241'
+           
+            name='Rana Ezat'
+            image='/images/6.jpeg'
+            Pos='PR Team (High board)'
+          />
+                     <CardTeam
+         
+           
+            name='Fatma Faruq'
+            image='/images/7.jpeg'
+            Pos='PR Team (High board)'
+          />
+                      <CardTeam
+         
+           
+         name='Mahmoud Sofy'
+         image='/images/11.jpeg'
+         Pos='Media Team (High board)'
+       />
+            <CardTeam
+         
+           
+         name='Reham Bakri'
+         image='/images/8.jpg'
+         Pos='Media Team (High board)'
+       />            <CardTeam
+         
+           
+         name='Fatma Sherif'
+         image='/images/9.jpeg'
+         Pos='HR Team (High board)'
+       />
+        <CardTeam
+         
+           
+         name='Reem Ashraf'
+         image='/images/10.jpeg'
+         Pos='HR Team (High board)'
+       />
+               <CardTeam
+         
+           
+         name='Marina Mamdouh'
+         image='/images/12.jpeg'
+         Pos='HR Team (High board)'
+       />
         </div>{" "}
         <div className='h-[250px] rotate-180 z-30 hidden md:block hover:opacity-20 opacity-40 hover:scale-90 duration-500 absolute bottom-1 left-0 w-[250px]'>
           <Lottie animationData={dragchil} />{" "}
