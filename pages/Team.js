@@ -86,7 +86,7 @@ function Team() {
          
            
          name='Maryam Mahmoud'
-         image='/images/13.jpeg'
+         image='/images/13.png'
          Pos='Media Team (High board)'
          herfFacebook= "https://www.facebook.com/profile.php?id=100073430179534"
          herfLinkedIn="https://www.linkedin.com/in/maryam-mahmoud-3-9203b9257"

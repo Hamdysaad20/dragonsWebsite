@@ -35,6 +35,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: rgb(17 24 39);
   color: white;
+  box-sizing: border-box;
+
 }
 
 ::-webkit-scrollbar {
