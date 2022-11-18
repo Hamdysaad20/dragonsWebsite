@@ -1,14 +1,6 @@
-import { React,useState } from "react";
-import Image from "next/image";
+import { React } from "react";
 
-import Lottie from "lottie-react";
-import celebrate from "../public/JSON/user/60051-shapes-v1.json";
-import celebrate2 from "../public/JSON/user/60061-shapes-gradient";
-import Styles from "../styles/Team.module.css";
-import { Loading } from "@nextui-org/react";
-
-function SectionOneAnnounce(props) {
-     const [select,setSelect] =useState(0)
+function SectionOneAnnounce() {
     return (
     <div
       style={{ fontFamily: "Poppins, sans-serif" }}
