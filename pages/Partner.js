@@ -198,7 +198,21 @@ function Partner() {
               {count}/150
             </div>
           </div>
-
+          {btnIsActive ? (
+            <input
+              type='submit'
+              value='Send'
+              className='w-full max-w-[200px] m-2 duration-300 select-none bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-400/90 focus:outline-none focus:shadow-outline'
+            />
+          ) : (
+            <input
+              type='submit'
+              value='Sending...'
+              className='w-full max-w-[200px] m-2 duration-300 select-none bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-400/90 focus:outline-none focus:shadow-outline'
+              disabled
+            />
+          )}
+        
 </div>
 </form>
 

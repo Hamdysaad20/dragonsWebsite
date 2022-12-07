@@ -158,7 +158,7 @@ const ContactUs = () => {
             />
           </div>
           <div className='w-full '>
-            <p className='text-left ml-1 my-1'>University ID*</p>
+            <p className='text-left ml-1 my-1'>University </p>
 
             <input
               onClick={() => {
@@ -172,11 +172,34 @@ const ContactUs = () => {
               w-full  rounded-md h-12 px-2 sm:px-2 py-1 text-gray-400 bg-gray-700/20                          ${
                 ID ? "ring-2 duration-100" : ""
               }`}
-              label='Number'
+              label='text'
               name='user_ID'
               type='tel'
-              maxLength='7'
-              placeholder='number'
+              maxLength='70'
+              placeholder='EELU'
+              required
+            />
+          </div>
+          <div className='w-full '>
+            <p className='text-left ml-1 my-1'> City </p>
+
+            <input
+              onClick={() => {
+                setemailRing(false);
+                setNumber(false);
+                setnameRing(false);
+                setmessageRing(false);
+                setID(!ID);
+              }}
+              className={`
+              w-full  rounded-md h-12 px-2 sm:px-2 py-1 text-gray-400 bg-gray-700/20     
+               
+              `}
+              label='text'
+              name='city'
+              
+              maxLength='70'
+              placeholder='Fayoum'
               required
             />
           </div>
@@ -215,6 +238,69 @@ const ContactUs = () => {
                 </label>
               </div>
 
+
+
+              <div className='hover:bg-yellow-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
+                {" "}
+                <label className='cursor-pointer font-semibold' htmlFor='cloud'>
+                  {" "}
+                  <input
+                    className='mt-[5px]'
+                    type='radio'
+                    id='cloud'
+                    name='team'
+                    value='cloud'
+                  />{" "}
+                Cloud
+                </label>
+              </div>
+
+
+              <div className='hover:bg-yellow-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
+                {" "}
+                <label className='cursor-pointer font-semibold' htmlFor='flutter'>
+                  {" "}
+                  <input
+                    className='mt-[5px]'
+                    type='radio'
+                    id='flutter'
+                    name='team'
+                    value='flutter'
+                  />{" "}
+                Flutter
+                </label>
+              </div>
+
+              <div className='hover:bg-yellow-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
+                {" "}
+                <label className='cursor-pointer font-semibold' htmlFor='embedded'>
+                  {" "}
+                  <input
+                    className='mt-[5px]'
+                    type='radio'
+                    id='embedded'
+                    name='team'
+                    value='embedded'
+                  />{" "}
+                Embedded 
+                </label>
+              </div>
+
+
+              <div className='hover:bg-yellow-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
+                {" "}
+                <label className='cursor-pointer font-semibold' htmlFor='ML'>
+                  {" "}
+                  <input
+                    className='mt-[5px]'
+                    type='radio'
+                    id='ML'
+                    name='team'
+                    value='ML'
+                  />{" "}
+                ML
+                </label>
+              </div>
 
 
               <div className='hover:bg-yellow-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
@@ -389,6 +475,23 @@ const ContactUs = () => {
                   3
                 </label>
               </div>
+              <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 w-12 rounded-md my-1  justify-center mx-auto gap-1 flex '>
+                {" "}
+                <label
+                  className='cursor-pointer  px-7 font-semibold'
+                  htmlFor='four'>
+                  <input
+                    className='mt-[5px]'
+                    type='radio'
+                    name='level'
+                    id='four'
+                    value='four'
+                    required
+                  />{" "}
+                  4
+                </label>
+              </div>
+              
             </div>
           </div>
           <div className='flex md:flex-none text-center mx-auto justify-center flex-wrap w-full relative mb-2 text-sm rounded-md  px-2 gap-1 bg-gray-700/20'>
@@ -428,6 +531,23 @@ const ContactUs = () => {
                   IT
                 </label>
               </div>
+              <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 px-3 rounded-md my-1  justify-center mx-auto gap-1 flex '>
+                {" "}
+                <label
+                  className='cursor-pointer px-7 font-semibold'
+                  htmlFor='other'>
+                  <input
+                    className='mt-[5px]'
+                    type='radio'
+                    name='field'
+                    id='other'
+                    value='other'
+                    required
+                  />{" "}
+                  Other
+                </label>
+              </div>
+
             </div>
           </div>
           <div className='w-full overflow-hidden relative'>
