@@ -6,6 +6,7 @@ import CardTeam from "../components/CardTeam";
 import {React,useState,useEffect }from "react";
 import Image from "next/image";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import SectionOneAnnounce from "../components/SectionOneAnnounce";
 
 export default function Home() {
   const [EmpState,setEmpState]= useState(teamData)
@@ -48,7 +49,14 @@ export default function Home() {
           },
         }}>
         <div className='grid pt-20 place-items-center mb-20 lg:grid-flow-col grid-flow-row'>
-        
+        <SectionOneAnnounce
+        MainText="Join more than 1000+ people that interested in tech"
+        MainPTexe=""
+        action="/Join"
+        ActionButton="Join Us"
+        action2="https://chat.whatsapp.com/Bus9DexN6ueD7GegIkbHbz"
+        ActionButton2="Whatsapp Group 👨🏻‍🚀"
+        />
         </div>{" "}
       </motion.div>
 <div className="relative">

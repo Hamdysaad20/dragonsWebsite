@@ -16,7 +16,11 @@ function SectionOneAnnounce(props) {
       }>
       <div className='relative col-span-3 '>
         <div className='sm:ml-7  text-center  md:text-left max-w-3xl mx-auto pt-32 sm:pt-60 md:pt-96 lg:pt-60'>
-          <h1 className='select-none  text-slate-200 tracking-tight   font-extrabold text-4xl sm:text-5xl lg:text-6xl  text-center lg:text-left '>
+          <h1       style={{ fontFamily: "Poppins-Bold" }}
+ className='select-none  text-slate-200 tracking-tight  leading-loose
+ leading-loose
+
+ font-extrabold text-4xl sm:text-5xl lg:text-6xl  text-center lg:text-left '>
             {props.MainText}
             <span className=' text-red-500  font-extrabold  text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center  lg:text-left '>
               .
