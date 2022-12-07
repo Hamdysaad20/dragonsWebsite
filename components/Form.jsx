@@ -215,6 +215,24 @@ const ContactUs = () => {
                 </label>
               </div>
 
+
+
+              <div className='hover:bg-yellow-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
+                {" "}
+                <label className='cursor-pointer font-semibold' htmlFor='CS'>
+                  {" "}
+                  <input
+                    className='mt-[5px]'
+                    type='radio'
+                    id='CS'
+                    name='team'
+                    value='CS'
+                  />{" "}
+                  Cyber Security
+                </label>
+              </div>
+
+
               <div className='hover:bg-yellow-200/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
                 <label className='cursor-pointer font-semibold' htmlFor='Media'>
