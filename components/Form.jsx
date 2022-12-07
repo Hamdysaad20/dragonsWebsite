@@ -491,7 +491,23 @@ const ContactUs = () => {
                   4
                 </label>
               </div>
-              
+              <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 w-12 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
+                {" "}
+                <label
+                  className='cursor-pointer w-full  font-semibold'
+                  htmlFor='five'>
+                  <input
+                    className='mt-[5px]'
+                    type='radio'
+                    name='level'
+                    id='five'
+                    value='five'
+                    required
+                  />{" "}
+                  5
+                </label>
+              </div>
+             
             </div>
           </div>
           <div className='flex md:flex-none text-center mx-auto justify-center flex-wrap w-full relative mb-2 text-sm rounded-md  px-2 gap-1 bg-gray-700/20'>
