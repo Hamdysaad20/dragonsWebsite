@@ -1,9 +1,19 @@
 import "../styles/globals.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
     <>
+          <Head>
+        <title>Dragons</title>
+        <meta
+          property='og:Dragons'
+          content='Dragons'
+          key='Dragons'
+        />       
+        <link rel='shortcut icon' href='/images/logol.png' />
+      </Head>
       <Header
         className='select-none'
         herfFacebook='https://www.facebook.com/profile.php?id=100086806926973'
