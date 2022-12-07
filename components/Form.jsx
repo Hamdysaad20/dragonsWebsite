@@ -71,13 +71,13 @@ const ContactUs = () => {
 
   return (
     <div className='relative'>
-      <div className='absolute w-full h-full bg-gray-700/20 backdrop-blur-sm rounded-lg z-40'>
+      {/* <div className='absolute w-full h-full bg-gray-700/20 backdrop-blur-sm rounded-lg z-40'>
         <div className=' grid place-items-center'>
           <h1 className='text-gray-50 mt-[20%] text-center  md:text-xl lg:text-2xl text-lg font-bold'>
             The form is closed ... thank you 😊
           </h1>
         </div>
-      </div>
+      </div> */}
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -85,7 +85,7 @@ const ContactUs = () => {
         <h4
           style={{ fontFamily: "Poppins-Bold", width: "400" }}
           className='px-1 pb-2 text-gray-400  text-center  md:text-xl lg:text-2xl text-lg font-bold'>
-          Simple Information To Get Started
+          Simple Information To Get Started😊
         </h4>
         <div
           style={{ fontFamily: "Poppins-Bold", width: "400" }}
@@ -182,7 +182,7 @@ const ContactUs = () => {
           </div>
           <div className=' w-full m-1 mt-2 select-none rounded-md text-center  px-2 gap-1 bg-gray-700/20'>
             {" "}
-            <p className='my-2 font-semibold'>Choose a Team :*</p>
+            <p className='my-2 font-semibold'>Choose a Team :<span  className="text-red-400">*</span></p>
             <div className='flex md:flex-none flex-wrap w-full relative mb-2 text-sm rounded-md  px-2 gap-1 bg-gray-700/20'>
               <div className=' hover:bg-yellow-400/20 cursor-pointer select-none active:scale-95 duration-300 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
@@ -321,7 +321,7 @@ const ContactUs = () => {
 
           <div className=' w-full m-1 mt-2 select-none rounded-md text-center  px-2 gap-1 bg-gray-700/20'>
             {" "}
-            <p className='my-2 font-semibold'>Your Level :</p>
+            <p className='my-2 font-semibold'>Your Level :<span  className="text-red-400">*</span></p>
             <div className='flex md:flex-none flex-wrap w-full relative mb-2 text-sm rounded-md  px-2 gap-1 bg-gray-700/20'>
               <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 w-12 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
@@ -450,7 +450,7 @@ const ContactUs = () => {
           ) : (
             <input
               type='submit'
-              value='Send'
+              value='Sending...'
               className='w-full max-w-[200px] m-2 duration-300 select-none bg-red-500 text-white font-bold py-2 px-4 rounded-md hover:bg-red-400/90 focus:outline-none focus:shadow-outline'
               disabled
             />

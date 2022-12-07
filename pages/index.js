@@ -13,6 +13,7 @@ export default function Home() {
   const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <div className={`${"overflow-x-hidden"}${styles.container}`}>
+      
       <motion.div
         initial='hidden'
         animate='visible'
@@ -30,25 +31,7 @@ export default function Home() {
           },
         }}>
         <div className='grid pt-20 place-items-center mb-20 lg:grid-flow-col grid-flow-row'>
-          <SectionOneAnnounce
-            MainPTexe='Be there to see Talented developers, that can help you to start your own path, and clear all the mysteries around your roadmap😍
-
-            '
-            MainText={[
-              "Know Your ",
-              <span key='coloredText' className=' header text-red-400'>
-                Path
-              </span>,
-              " As A Developer",
-            ]}
-            ActionButton='See The Event'
-            action='/Event'
-            ActionButton2='Facebook Page👍'
-            action2='https://www.facebook.com/profile.php?id=100086806926973'
-            S1='/images/1.png'
-            speaker='/Speaker'
-            MainPTexe2="Thursday, NOVEMBER 17 @ 1:00 PM  UTC+02:00 (Cairo Time)"
-          />
+        
         </div>{" "}
       </motion.div>
 <div className="relative">
