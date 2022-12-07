@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Styles from "../styles/Team.module.css";
 import Lottie from "lottie-react";
 import dragchil from "../public/JSON/dragchil.json";
+import teamData from "../components/JSON/teamData"
 function Team() {
 
-  
   return (
     <div className='pt-20  relative flex justify-center mx-auto flex-col max-w-[1400px]'>
       <div class='grid mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
@@ -38,102 +38,23 @@ function Team() {
           },
         }}>
         <div className='w-full flex-wrap gap-2 mb-20 mt-12 max-w-[1400px] flex mx-auto justify-center '>
-          <CardTeam
-            herfFacebook='https://www.facebook.com/hamdysaad266/'
-            herfLinkedIn='https://www.linkedin.com/in/hamdysaad/'
-            herfGithub='https://github.com/Hamdysaad20'
-            name='Hamdy Saad'
-            work='Sr.Frontend Engineer'
-            image='/images/1.jpeg'
-            Pos='co-founder/CTO'
-          />
-          <CardTeam
-            herfFacebook='https://www.facebook.com/profile.php?id=100010052953257'
-            herfLinkedIn='https://www.linkedin.com/in/hatem-ali-hassan-042798225/'
-            herfGithub='https://github.com/Hatem2002'
-            name='Hatem Ali'
-            work='Frontend Engineer'
-            image='/images/2.jpeg'
-            Pos='co-founder/CEO'
-          />
-          <CardTeam
-            herfFacebook='https://www.facebook.com/profile.php?id=100012624398938'
-            herfLinkedIn='https://www.linkedin.com/in/salaheldin-mohamed/'
-            herfGithub='https://github.com/salah-mo'
-            name='Salah Mohamed'
-            work='Backend Engineer'
-            image='/images/3.png'
-            Pos='co-founder/Head Java'
-          />
-          <CardTeam
-            herfFacebook='https://www.facebook.com/eslam.mohamedelabd.1'
-            herfLinkedIn='https://www.linkedin.com/in/eslam-mohamed-moawed/'
-            herfGithub='https://github.com/Crypt00o'
-            name='Eslam Mohammed'
-            work='Backend Engineer'
-            image='/images/4.jpg'
-            Pos='Head of Backend'
-          />
-           <CardTeam
-            herfFacebook='https://www.facebook.com/rana.ezat.22'
-            herfLinkedIn='https://www.linkedin.com/in/rana-muhammad-b77276241'
+         {teamData.map((index)=>(
+  <CardTeam key={index}
+  herfFacebook= {index.herfFacebook}
+  herfLinkedIn={index.herfLinkedIn}
+  herfGithub={index.herfGithub}
+  name={index.name}
+  work={index.work}
+  image={index.image}
+  Pos={index.Pos}
+/>
+
+         ))}
+
+
+  
+       
            
-            name='Rana Ezat'
-            image='/images/6.jpeg'
-            Pos='PR Team (High board)'
-          />
-                             <CardTeam
-         
-           
-         name='Maryam Mahmoud'
-         image='/images/13.png'
-         Pos='Media Team (High board)'
-         herfFacebook= "https://www.facebook.com/profile.php?id=100073430179534"
-         herfLinkedIn="https://www.linkedin.com/in/maryam-mahmoud-3-9203b9257"
-       /> 
-                     <CardTeam
-         
-           
-            name='Fatma Faruq'
-            image='/images/7.jpeg'
-            Pos='PR Team (High board)'
-          />
-                      <CardTeam
-         
-           
-         name='Mahmoud Sofy'
-         image='/images/11.jpeg'
-         Pos='Media Team (High board)'
-         herfFacebook="https://www.facebook.com/profile.php?id=100058382085713"
-       />
-            <CardTeam
-         
-           
-         name='Reham Bakri'
-         image='/images/8.jpg'
-         Pos='Media Team (High board)'
-         herfLinkedIn= "https://www.linkedin.com/in/reham-baki-6a98a221a"
-       />            <CardTeam
-         
-           
-         name='Fatma Sherif'
-         image='/images/9.jpeg'
-         Pos='HR Team (High board)'
-       />
-        <CardTeam
-         
-           
-         name='Reem Ashraf'
-         image='/images/10.jpeg'
-         Pos='HR Team (High board)'
-       />
-               <CardTeam
-         
-           
-         name='Marina Mamdouh'
-         image='/images/12.jpeg'
-         Pos='PR Team (High board)'
-       />
         </div>{" "}
         <div className='h-[250px] rotate-180 z-30 hidden md:block hover:opacity-20 opacity-40 hover:scale-90 duration-500 absolute bottom-1 left-0 w-[250px]'>
           <Lottie animationData={dragchil} />{" "}

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 import React from "react";
@@ -47,7 +46,7 @@ function cardTeam(props) {
               <div className='flex gap-2 justify-center  right-4 pl-2 absolute bottom-4'>
                 <div className='duration-500 active:scale-95 mt-[6px]  hover:text-gray-400'>
                   {" "}
-                  {props.herfLinkedIn?<Link href={props.herfLinkedIn} passHref>
+                  {props.herfLinkedIn?<a href={props.herfLinkedIn} passHref>
                     <svg
                       width='23px'
                       height='23px'
@@ -60,12 +59,12 @@ function cardTeam(props) {
                         d='M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM16.9605 19.8778H11.5216V36.2196H16.9605V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1326 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22 19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752L36.5754 26.8497Z'
                         fill='black'></path>
                     </svg>
-                  </Link>:null}
+                  </a>:null}
                   
                 </div>
                 <div className='duration-500 active:scale-95 mt-[6px]  hover:text-gray-400'>
                   {" "}
-                 {props.herfGithub? <Link href={props?.herfGithub} passHref>
+                 {props.herfGithub? <a href={props?.herfGithub} passHref>
                     <svg
                       version='1.1'
                       id='Capa_1'
@@ -116,11 +115,11 @@ function cardTeam(props) {
                       <g></g>
                       <g></g>
                     </svg>
-                  </Link>:""}
+                  </a>:""}
                 </div>
                 <div className='duration-500 active:scale-95  hover:text-gray-400'>
                   {" "}
-                {  props.herfFacebook? <Link href={props.herfFacebook} passHref>
+                {  props.herfFacebook? <a href={props.herfFacebook} passHref>
                     <svg
                       fill='black'
                       xmlns='http://www.w3.org/2000/svg'
@@ -131,7 +130,7 @@ function cardTeam(props) {
                       {" "}
                       <path d='M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z' />
                     </svg>
-                  </Link>:null}
+                  </a>:null}
                  
                 </div>
               </div>

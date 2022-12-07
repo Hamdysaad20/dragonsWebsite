@@ -1,19 +1,36 @@
 import styles from "../styles/Home.module.css";
-import SectionOneAnnounce from "../components/SectionOneAnnounce";
 import Sec2Summary from "../components/WhatWeDo";
-import CardTeam from "../components/CardTeam";
 import Styles from "../styles/Team.module.css";
-
+import teamData from "../components/JSON/teamData"
+import CardTeam from "../components/CardTeam";
+import {React,useState,useEffect }from "react";
 import Image from "next/image";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export default function Home() {
+  const [EmpState,setEmpState]= useState(teamData)
+  
+  function randomArrayShuffle(teamData) {
+    var currentIndex = teamData.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+      temporaryValue = teamData[currentIndex];
+      teamData[currentIndex] = teamData[randomIndex];
+      teamData[randomIndex] = temporaryValue;
+    }
+    return teamData;
+  }
+  useEffect(()=>(
+    setEmpState( randomArrayShuffle(teamData).slice(0,4))
+
+  ),[])
   
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <div className={`${"overflow-x-hidden"}${styles.container}`}>
-      
+
       <motion.div
         initial='hidden'
         animate='visible'
@@ -89,42 +106,19 @@ layout="fill"
         </p></div></div>
 <div className='w-full flex-wrap gap-2 mb-20 mt-12 max-w-[1400px] flex mx-auto justify-center '>
 
-          <CardTeam
-            herfFacebook='https://www.facebook.com/hamdysaad266/'
-            herfLinkedIn='https://www.linkedin.com/in/hamdysaad/'
-            herfGithub='https://github.com/Hamdysaad20'
-            name='Hamdy Saad'
-            work='Sr.Frontend Engineer'
-            image='/images/1.jpg'
-            Pos='co-founder/CTO'
-          />
-          <CardTeam
-            herfFacebook='https://www.facebook.com/profile.php?id=100010052953257'
-            herfLinkedIn='https://www.linkedin.com/in/hatem-ali-hassan-042798225/'
-            herfGithub='https://github.com/Hatem2002'
-            name='Hatem Ali'
-            work='Frontend Engineer'
-            image='/images/2.png'
-            Pos='co-founder/CEO'
-          />
-          <CardTeam
-            herfFacebook='https://www.facebook.com/profile.php?id=100012624398938'
-            herfLinkedIn='https://www.linkedin.com/in/salaheldin-mohamed/'
-            herfGithub='https://github.com/salah-mo'
-            name='Salah Mohamed'
-            work='Backend Engineer'
-            image='/images/3.png'
-            Pos='co-founder/Head Java'
-          />
-          <CardTeam
-            herfFacebook='https://www.facebook.com/eslam.mohamedelabd.1'
-            herfLinkedIn='https://www.linkedin.com/in/eslam-mohamed-moawed/'
-            herfGithub='https://github.com/Crypt00o'
-            name='Eslam Mohammed'
-            work='Backend Engineer'
-            image='/images/4.jpg'
-            Pos='Head of Backend'
-          />
+{EmpState.map((index)=>(
+  <CardTeam key={index}
+  herfFacebook= {index.herfFacebook}
+  herfLinkedIn={index.herfLinkedIn}
+  herfGithub={index.herfGithub}
+  name={index.name}
+  work={index.work}
+  image={index.image}
+  Pos={index.Pos}
+/>
+
+         ))}
+
            <div> <div className='mt-6  mx-12 sm:mx-0  sm:mt-10 sm:flex  justify-left sm:space-x-6 text-sm'>
           <a
               className='select-none font-bold max-w-sm  bg-white mt-4 sm:mt-0 shadow-md  hover:shadow-red-500/50  ring-2  ring-slate-900 hover:bg-gray-300 focus:outline-none focus:ring-2 opacity-90  focus:ring-offset-2 active:scale-95 duration-100 0  text-gray-900  h-12 px-3  sm:px-16 rounded-lg w-full flex items-center justify-center sm:w-auto highlight-white/20 '
