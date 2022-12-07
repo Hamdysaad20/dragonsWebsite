@@ -56,6 +56,7 @@ export default function Home() {
         ActionButton="Join Us"
         action2="https://chat.whatsapp.com/Bus9DexN6ueD7GegIkbHbz"
         ActionButton2="Whatsapp Group 👨🏻‍🚀"
+        speaker="/Partner"
         />
         </div>{" "}
       </motion.div>
