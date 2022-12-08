@@ -14,7 +14,7 @@ function foundersCard(props) {
 
 
 
-            <div className={`${'border-4 border-x-black border-gray-200  overflow-hidden grid place-items-center relative rounded-full h-[250px] w-[250px] '}`}>
+            <div className={`${'border-4  border-x-black border-gray-200  overflow-hidden grid place-items-center relative rounded-full h-[250px] w-[250px] '}`}>
             <Image src={props.image} alt ="" layout='fill'/>
 
             </div>

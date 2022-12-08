@@ -115,7 +115,7 @@ layout="fill"
 <p class={`${"z-20"}${Styles.pHeaderTeam}`}>
           <span style={{ fontFamily: "dragons"}} class={Styles.SpanHeaderTeam}>Our Team </span>
         </p></div></div>
-<div className='w-full flex-wrap gap-2 mb-20 mt-12 max-w-[1400px] flex mx-auto justify-center '>
+<div className='w-full flex-wrap gap-2 mb-20 mt-12 max-w-[1400px]  flex mx-auto justify-center '>
 
 {EmpState.map((index)=>(
   <CardTeam key={index}

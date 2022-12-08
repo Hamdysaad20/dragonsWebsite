@@ -1,11 +1,13 @@
 import React from 'react'
 import Styles from "../styles/Team.module.css";
+import Styless from "../styles/founders.module.css";
+
 import Image from "next/image"
 import FoundersCard from './FoundersCard';
 import foundersArr from "./JSON/founders"
 function founders() {
   return (
-    <div>
+    <div className={Styless.gg}>
           <div class='grid mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
           
 <p class={`${"z-20"}${Styles.pHeaderTeam}`}>
@@ -15,7 +17,7 @@ function founders() {
           <Image src="/images/DragonsF.png" alt ="" layout='fill'/>
           </div>
          
-          <div className="grid place-items-center grid-cols-3 gap-10 mt-12"> 
+          <div className="grid place-items-center grid-cols-3 gap-10 mb-20 mt-12"> 
           {foundersArr.map((index)=>(
   <FoundersCard key={index}
   name={index.name}

@@ -24,7 +24,7 @@ function Join() {
           },
         }}>
         <div className='grid pt-20 place-items-center mb-20 lg:grid-flow-col grid-flow-row'>
-          <div>
+          <div className=''>
             <FormSideSection />
           </div>
           <Form />
