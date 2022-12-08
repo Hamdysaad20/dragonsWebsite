@@ -1,6 +1,8 @@
 import React from 'react'
 import Styles from "../styles/Team.module.css";
 import Styless from "../styles/founders.module.css";
+import Lottie from "lottie-react";
+import fire from "../public/JSON/fire.json";
 
 import Image from "next/image"
 import FoundersCard from './FoundersCard';
@@ -14,10 +16,12 @@ function founders() {
           <span  style={{ fontFamily: "dragons"}} >Founders</span>
         </p>
         <div className='relative h-[300px] w-[300px] hover:scale-110 duration-700'>
-          <Image src="/images/DragonsF.png" alt ="" layout='fill'/>
+          <Image className='z-20' src="/images/DragonsF.png" alt ="" layout='fill'/>
+          <Lottie animationData={fire} />
+
           </div>
          
-          <div className="grid place-items-center grid-cols-3 gap-10 mb-20 mt-12"> 
+          <div className="flex flex-wrap gap-10 mb-20 mt-12"> 
           {foundersArr.map((index)=>(
   <FoundersCard key={index}
   name={index.name}
