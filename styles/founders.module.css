@@ -1,0 +1,27 @@
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.animate_spin_cus{
+    animation: spin 5s linear infinite;
+
+}
+.hover\:animate_spin_cus:hover {
+    animation: spin 1s linear infinite;
+}
+
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.animate_spin_cus2{
+    animation: spin 20s linear infinite;
+
+}
+.hover\:animate_spin_cus2:hover {
+    animation: spin 1s linear infinite;
+}

@@ -7,6 +7,7 @@ import {React,useState,useEffect }from "react";
 import Image from "next/image";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import SectionOneAnnounce from "../components/SectionOneAnnounce";
+import Founders from './../components/Founders';
 
 export default function Home() {
   const [EmpState,setEmpState]= useState(teamData)
@@ -109,9 +110,10 @@ layout="fill"
       </div>  
   </div>    
       <div className='-pt-20  relative flex justify-center mx-auto flex-col max-w-[1400px]'>
+    <Founders/>
       <div class='grid mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
 <p class={`${"z-20"}${Styles.pHeaderTeam}`}>
-          <span class={Styles.SpanHeaderTeam}>Our Team </span>
+          <span style={{ fontFamily: "dragons"}} class={Styles.SpanHeaderTeam}>Our Team </span>
         </p></div></div>
 <div className='w-full flex-wrap gap-2 mb-20 mt-12 max-w-[1400px] flex mx-auto justify-center '>
 
@@ -129,7 +131,7 @@ layout="fill"
          ))}
 
            <div> <div className='mt-6  mx-12 sm:mx-0  sm:mt-10 sm:flex  justify-left sm:space-x-6 text-sm'>
-          <a
+          <a style={{ fontFamily: "dragons"}}
               className='select-none font-bold max-w-sm  bg-white mt-4 sm:mt-0 shadow-md  hover:shadow-red-500/50  ring-2  ring-slate-900 hover:bg-gray-300 focus:outline-none focus:ring-2 opacity-90  focus:ring-offset-2 active:scale-95 duration-100 0  text-gray-900  h-12 px-3  sm:px-16 rounded-lg w-full flex items-center justify-center sm:w-auto highlight-white/20 '
               href={"/Team"}
             passHref>
