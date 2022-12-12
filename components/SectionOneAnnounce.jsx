@@ -1,13 +1,17 @@
+
 import { React } from "react";
 import Image from "next/image";
 
 import Lottie from "lottie-react";
 import celebrate from "../public/JSON/user/60051-shapes-v1.json";
 import celebrate2 from "../public/JSON/user/60061-shapes-gradient";
-
+import { useRouter } from "next/router";
 import { Loading } from "@nextui-org/react";
 
 function SectionOneAnnounce(props) {
+
+  let router = useRouter();
+let distnationPartner = props.partner;
   return (
     <div
       style={{ fontFamily: "Poppins, sans-serif" }}
@@ -128,22 +132,27 @@ function SectionOneAnnounce(props) {
                 </div>
               </div>
             </div>
-            <a herf={props.speaker}>
-              <div className='h-56 w-56 relative backdrop-blur-xl bg-white/30 cursor-pointer	 opacity-90 hover:opacity-50 duration-500'>
+            
+              <div onClick={()=>{
+                
+                router.push(distnationPartner)
+              }} className='h-56 w-56 relative backdrop-blur-xl bg-white/30 cursor-pointer	 opacity-90 hover:opacity-50 duration-500'>
                 {" "}
                 <div
                   className='backdrop-blur-xl saturate-50
 
 bg-white/30 p-2 hover:p-12 duration-500'>
                   <Lottie animationData={celebrate2} />{" "}
+
                   <div className=' top-[40%] text-center flex justify-center absolute '>
                     <h1 className=' ml-2 font-bold text-2xl drop-shadow-2xl bg-gray-900 text-amber-400 select-none  '>
                       Be A Speaker
                     </h1>
-                  </div>
+                  </div>   
                 </div>
+             
               </div>
-            </a>
+            
           </div>
         </div>
       </div>

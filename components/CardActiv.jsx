@@ -31,7 +31,7 @@ function CardActiv(props) {
               <h1 className='text-xl font-bold pl-2 p-1'>{props.name}</h1>
               <h1
                 className={`${
-                  props.isTech == true ? " text-blue-400 " : " text-red-400 "
+                  props.isTech  ? " text-blue-400 " : " text-red-400 "
                 }${"text-md font-bold pl-2 p-1 pt-0"}`}>
                 {props.isTech ? "technical" : "non-technical"}
               </h1>

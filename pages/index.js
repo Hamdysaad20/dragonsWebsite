@@ -53,11 +53,12 @@ export default function Home() {
         <SectionOneAnnounce
         MainText="Join more than 1000+ people that interested in tech"
         MainPTexe=""
+        partner="/Partner"
         action="/Join"
         ActionButton="Join Us"
         action2="https://chat.whatsapp.com/Bus9DexN6ueD7GegIkbHbz"
         ActionButton2="Whatsapp Group 👨🏻‍🚀"
-        speaker="/Partner"
+        
         />
         </div>{" "}
       </motion.div>
