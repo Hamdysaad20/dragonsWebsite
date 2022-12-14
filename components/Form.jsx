@@ -57,7 +57,64 @@ const ContactUs = () => {
                       router.push("/Done");
                     },
                     (error) => {
+//1
+                      emailjs
+                  .sendForm(
+                    "service_s8pghqr",
+                    "template_xnwyxcr",
+                    form.current,
+                    "_bvqDV52fW8zphn3m"
+                  )
+                  .then(
+                    (result) => {
+                      console.log(result.text);
+                      router.push("/Done");
+                    },
+                    (error) => {
+//2
+emailjs
+                  .sendForm(
+                    "service_z2lly1b",
+                    "template_uqhg1yu",
+                    form.current,
+                    "Hn3unKOYqaibi0HeA"
+                  )
+                  .then(
+                    (result) => {
+                      console.log(result.text);
+                      router.push("/Done");
+                    },
+                    (error) => {
+//3
+emailjs
+                  .sendForm(
+                    "service_rdvmi9i",
+                    "template_rxm96ws",
+                    form.current,
+                    "fU2iEZWHozuOSpKJV"
+                  )
+                  .then(
+                    (result) => {
+                      console.log(result.text);
+                      router.push("/Done");
+                    },
+                    (error) => {
                       console.log(error.text);
+                    }
+                  );
+
+                console.log(error.text);
+ 
+                    }
+                  );
+
+                console.log(error.text);
+ 
+                    }
+                  );
+
+                console.log(error.text);
+ 
                     }
                   );
 
@@ -174,7 +231,6 @@ const ContactUs = () => {
               }`}
               label='text'
               name='user_ID'
-              type='tel'
               maxLength='70'
               placeholder='EELU'
               required
