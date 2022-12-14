@@ -534,7 +534,7 @@ emailjs
               <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 w-12 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
                 <label
-                  className='cursor-pointer  px-7 font-semibold'
+                  className='cursor-pointer  px-2 font-semibold'
                   htmlFor='four'>
                   <input
                     className='mt-[5px]'
