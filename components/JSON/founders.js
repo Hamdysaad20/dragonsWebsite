@@ -5,7 +5,7 @@ const teamData=[ {
     , name:'Hamdy Saad'
     ,work:'Sr.Frontend Engineer'
    , image:"/images/1.jpeg"
-  ,  Pos:'co-founder/CTO'
+  ,  Pos:'CO-Founder/CTO'
   },
   {
     herfFacebook:'https://www.facebook.com/profile.php?id=100010052953257'
@@ -14,7 +14,7 @@ const teamData=[ {
     ,name:'Hatem Ali'
     ,work:'Frontend Engineer'
     ,image:'/images/2.jpeg'
-    ,Pos:'co-founder/CEO'
+    ,Pos:'CO-Founder/CEO'
   },{
     herfFacebook:'https://www.facebook.com/profile.php?id=100012624398938'
     ,herfLinkedIn:'https://www.linkedin.com/in/salaheldin-mohamed/'
@@ -22,7 +22,7 @@ const teamData=[ {
     ,name:'Salah Mohamed'
     ,work:'Backend Engineer'
     ,image:'/images/3.png'
-    ,Pos:'co-founder/Head Java'
+    ,Pos:'CO-Founder/Head Java'
   }
   ]
   export default teamData  
