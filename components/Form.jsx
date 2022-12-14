@@ -550,7 +550,7 @@ emailjs
               <div className='hover:bg-gray-200/20  cursor-pointer select-none active:scale-95 duration-300 w-12 px-1 rounded-md my-1  justify-center mx-auto gap-1 flex '>
                 {" "}
                 <label
-                  className='cursor-pointer w-full  font-semibold'
+                  className='cursor-pointer w-full  px-2  font-semibold'
                   htmlFor='five'>
                   <input
                     className='mt-[5px]'
