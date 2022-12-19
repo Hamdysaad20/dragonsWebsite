@@ -208,7 +208,8 @@ emailjs
               }`}
               label='Number'
               name='user_Number'
-              type='tel'
+              type='number'
+              
               maxLength='11'
               min="11"
               placeholder='number'
