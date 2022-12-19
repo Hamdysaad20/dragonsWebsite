@@ -210,6 +210,7 @@ emailjs
               name='user_Number'
               type='tel'
               maxLength='11'
+              min="11"
               placeholder='number'
               required
             />
