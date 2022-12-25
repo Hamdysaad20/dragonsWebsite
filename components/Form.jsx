@@ -170,7 +170,7 @@ emailjs
           </div>
           <div className='w-full '>
             <p className='text-left ml-1 my-1'>Email* </p>
-
+     
             <input
               onClick={() => {
                 setemailRing(!emailRing);
