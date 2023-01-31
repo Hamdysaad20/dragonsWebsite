@@ -170,9 +170,13 @@ emailjs
           </div>
           <div className='w-full '>
             <p className='text-left ml-1 my-1'>Email* </p>
+<<<<<<< HEAD
               
 
                   
+=======
+
+>>>>>>> parent of 7b76016... tt
             <input
               onClick={() => {
                 setemailRing(!emailRing);
