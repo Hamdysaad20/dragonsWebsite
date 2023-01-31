@@ -8,7 +8,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import SectionOneAnnounce from "../components/SectionOneAnnounce";
 import Founders from './../components/Founders';
-import { Link } from 'next/link';
+import  Link  from 'next/link';
 
 export default function Home() {
   const [EmpState,setEmpState]= useState(teamData)

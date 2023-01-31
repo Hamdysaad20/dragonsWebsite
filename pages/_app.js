@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         Herfabout='/about'
         HerfActivity='/Activities'
         HerfService='/Team'
-        herflogoLink={"/"}
+        herflogoLink="/"
         herflogo='/images/logo.png'
         herflogo2='/images/logotext.png'
       />

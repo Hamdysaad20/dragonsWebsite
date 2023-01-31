@@ -14,130 +14,130 @@ const ContactUs = () => {
   const [btnIsActive, setbtnIsActive] = useState(true);
 
   const [count, setCount] = useState(0);
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setbtnIsActive(false);
-    emailjs
-      .sendForm(
-        "service_4irr0gp",
-        "template_znl9859",
-        form.current,
-        "icWEtEN3OYScLYf9J"
-      )
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+//     setbtnIsActive(false);
+//     emailjs
+//       .sendForm(
+//         "service_4irr0gp",
+//         "template_znl9859",
+//         form.current,
+//         "icWEtEN3OYScLYf9J"
+//       )
 
-      .then(
-        (result) => {
-          console.log(result.text);
-          router.push("/Done");
-        },
-        (error) => {
-          emailjs
-            .sendForm(
-              "service_k32wzko",
-              "template_t135n4d",
-              form.current,
-              "QdrzUrgtoKaIrswMh"
-            )
-            .then(
-              (result) => {
-                console.log(result.text);
-                router.push("/Done");
-              },
-              (error) => {
-                emailjs
-                  .sendForm(
-                    "service_4yf9y8k",
-                    "template_h07qubn",
-                    form.current,
-                    "h9TYZnKkm7b5NJjfT"
-                  )
-                  .then(
-                    (result) => {
-                      console.log(result.text);
-                      router.push("/Done");
-                    },
-                    (error) => {
-//1
-                      emailjs
-                  .sendForm(
-                    "service_s8pghqr",
-                    "template_xnwyxcr",
-                    form.current,
-                    "_bvqDV52fW8zphn3m"
-                  )
-                  .then(
-                    (result) => {
-                      console.log(result.text);
-                      router.push("/Done");
-                    },
-                    (error) => {
-//2
-emailjs
-                  .sendForm(
-                    "service_z2lly1b",
-                    "template_uqhg1yu",
-                    form.current,
-                    "Hn3unKOYqaibi0HeA"
-                  )
-                  .then(
-                    (result) => {
-                      console.log(result.text);
-                      router.push("/Done");
-                    },
-                    (error) => {
-//3
-emailjs
-                  .sendForm(
-                    "service_rdvmi9i",
-                    "template_rxm96ws",
-                    form.current,
-                    "fU2iEZWHozuOSpKJV"
-                  )
-                  .then(
-                    (result) => {
-                      console.log(result.text);
-                      router.push("/Done");
-                    },
-                    (error) => {
-                      console.log(error.text);
-                    }
-                  );
+//       .then(
+//         (result) => {
+//           console.log(result.text);
+//           router.push("/Done");
+//         },
+//         (error) => {
+//           emailjs
+//             .sendForm(
+//               "service_k32wzko",
+//               "template_t135n4d",
+//               form.current,
+//               "QdrzUrgtoKaIrswMh"
+//             )
+//             .then(
+//               (result) => {
+//                 console.log(result.text);
+//                 router.push("/Done");
+//               },
+//               (error) => {
+//                 emailjs
+//                   .sendForm(
+//                     "service_4yf9y8k",
+//                     "template_h07qubn",
+//                     form.current,
+//                     "h9TYZnKkm7b5NJjfT"
+//                   )
+//                   .then(
+//                     (result) => {
+//                       console.log(result.text);
+//                       router.push("/Done");
+//                     },
+//                     (error) => {
+// //1
+//                       emailjs
+//                   .sendForm(
+//                     "service_s8pghqr",
+//                     "template_xnwyxcr",
+//                     form.current,
+//                     "_bvqDV52fW8zphn3m"
+//                   )
+//                   .then(
+//                     (result) => {
+//                       console.log(result.text);
+//                       router.push("/Done");
+//                     },
+//                     (error) => {
+// //2
+// emailjs
+//                   .sendForm(
+//                     "service_z2lly1b",
+//                     "template_uqhg1yu",
+//                     form.current,
+//                     "Hn3unKOYqaibi0HeA"
+//                   )
+//                   .then(
+//                     (result) => {
+//                       console.log(result.text);
+//                       router.push("/Done");
+//                     },
+//                     (error) => {
+// //3
+// emailjs
+//                   .sendForm(
+//                     "service_rdvmi9i",
+//                     "template_rxm96ws",
+//                     form.current,
+//                     "fU2iEZWHozuOSpKJV"
+//                   )
+//                   .then(
+//                     (result) => {
+//                       console.log(result.text);
+//                       router.push("/Done");
+//                     },
+//                     (error) => {
+//                       console.log(error.text);
+//                     }
+//                   );
 
-                console.log(error.text);
+//                 console.log(error.text);
  
-                    }
-                  );
+//                     }
+//                   );
 
-                console.log(error.text);
+//                 console.log(error.text);
  
-                    }
-                  );
+//                     }
+//                   );
 
-                console.log(error.text);
+//                 console.log(error.text);
  
-                    }
-                  );
+//                     }
+//                   );
 
-                console.log(error.text);
-              }
-            );
-          console.log(error.text);
-        }
-      );
-  };
+//                 console.log(error.text);
+//               }
+//             );
+//           console.log(error.text);
+//         }
+//       );
+//   };
 
   return (
     <div className='relative'>
-      {/* <div className='absolute w-full h-full bg-gray-700/20 backdrop-blur-sm rounded-lg z-40'>
+       <div className='absolute w-full h-full bg-gray-700/20 backdrop-blur-sm rounded-lg z-40'>
         <div className=' grid place-items-center'>
           <h1 className='text-gray-50 mt-[20%] text-center  md:text-xl lg:text-2xl text-lg font-bold'>
             The form is closed ... thank you 😊
           </h1>
         </div>
-      </div> */}
+      </div> 
       <form
         ref={form}
-        onSubmit={sendEmail}
+        // onSubmit={sendEmail}
         className='flex  flex-col my-12  items-center justify-center'>
         <h4
           style={{ fontFamily: "Poppins-Bold", width: "400" }}

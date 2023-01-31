@@ -1,6 +1,5 @@
 import React, { useRef ,useState} from 'react'
 import FormSideSection from "../components/FormSideSection";
-import Form from "../components/Form";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 

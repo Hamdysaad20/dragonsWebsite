@@ -7,7 +7,7 @@ import celebrate from "../public/JSON/user/60051-shapes-v1.json";
 import celebrate2 from "../public/JSON/user/60061-shapes-gradient";
 import { useRouter } from "next/router";
 import { Loading } from "@nextui-org/react";
-import { Link } from 'next/link';
+import Link from "next/link";
 
 function SectionOneAnnounce(props) {
 

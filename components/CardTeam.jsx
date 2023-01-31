@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import React from "react";
-import { Link } from 'next/link';
+import Link from "next/link";
 
 function cardTeam(props) {
   function getRandomInt(max) {
