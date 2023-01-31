@@ -128,7 +128,7 @@ const ContactUs = () => {
 
   return (
     <div className='relative'>
-       <div className='absolute w-full h-full bg-gray-700/20 backdrop-blur-sm rounded-lg z-40'>
+       <div className='absolute w-full h-full bg-gray-700/80 backdrop-blur-sm rounded-lg z-40'>
         <div className=' grid place-items-center'>
           <h1 className='text-gray-50 mt-[20%] text-center  md:text-xl lg:text-2xl text-lg font-bold'>
             The form is closed ... thank you 😊
