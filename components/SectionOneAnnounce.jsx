@@ -7,6 +7,7 @@ import celebrate from "../public/JSON/user/60051-shapes-v1.json";
 import celebrate2 from "../public/JSON/user/60061-shapes-gradient";
 import { useRouter } from "next/router";
 import { Loading } from "@nextui-org/react";
+import { Link } from 'next/link';
 
 function SectionOneAnnounce(props) {
 
@@ -42,20 +43,20 @@ let distnationPartner = props.partner;
           </p>
 
           <div className='mt-6  mx-12 sm:mx-0   sm:mt-10  sm:flex justify-center  md:justify-center lg:justify-start  sm:space-x-6 text-sm'>
-            <a
+            <Link legacyBehavior
               aria-label='Get Started'
               className='select-none max-w-sm font-bold box-decoration-slice shadow-lg hover:shadow-red-500/50     focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 active:scale-95 duration-100 focus:ring-offset-slate-800   h-12 px-6 rounded-lg w-full flex items-center text-white justify-center sm:w-auto bg-red-500  hover:bg-red-400'
               href={props.action}
               passHref>
               {props.ActionButton}
-            </a>
-            <a
+            </Link>
+            <Link legacyBehavior
               aria-label='Our Services'
               className='select-none font-bold max-w-sm  bg-white mt-4 sm:mt-0 shadow-md  hover:shadow-red-500/50  ring-2  ring-slate-900 hover:bg-gray-300 focus:outline-none focus:ring-2 opacity-90  focus:ring-offset-2 active:scale-95 duration-100 0  text-gray-900  h-12 px-3  sm:px-16 rounded-lg w-full flex items-center justify-center sm:w-auto highlight-white/20 '
               href={props.action2}
               passHref>
               {props.ActionButton2}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

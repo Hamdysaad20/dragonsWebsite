@@ -5,15 +5,16 @@ import teamData from "../components/JSON/teamData"
 import CardTeam from "../components/CardTeam";
 import {React,useState,useEffect }from "react";
 import Image from "next/image";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import SectionOneAnnounce from "../components/SectionOneAnnounce";
 import Founders from './../components/Founders';
+import { Link } from 'next/link';
 
 export default function Home() {
   const [EmpState,setEmpState]= useState(teamData)
   
   function randomArrayShuffle(teamData) {
-    var currentIndex = teamData.length, temporaryValue, randomIndex;
+    let currentIndex = teamData.length, temporaryValue, randomIndex;
     while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
@@ -28,7 +29,7 @@ export default function Home() {
 
   ),[])
   
-  const { scrollYProgress } = useViewportScroll();
+  const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <div className={`${"overflow-x-hidden"}${styles.container}`}>
@@ -52,7 +53,6 @@ export default function Home() {
         <div className='grid pt-20 place-items-center mb-20 lg:grid-flow-col grid-flow-row'>
         <SectionOneAnnounce
         MainText="Join more than 1000+ people that interested in tech"
-        MainPTexe=""
         partner="/Partner"
         action="/Join"
         ActionButton="Join Us"
@@ -132,12 +132,12 @@ layout="fill"
          ))}
 
            <div> <div className='mt-6  mx-12 sm:mx-0  sm:mt-10 sm:flex  justify-left sm:space-x-6 text-sm'>
-          <a style={{ fontFamily: "dragons"}}
+          <Link legacyBehavior style={{ fontFamily: "dragons"}}
               className='select-none font-bold max-w-sm  bg-white mt-4 sm:mt-0 shadow-md  hover:shadow-red-500/50  ring-2  ring-slate-900 hover:bg-gray-300 focus:outline-none focus:ring-2 opacity-90  focus:ring-offset-2 active:scale-95 duration-100 0  text-gray-900  h-12 px-3  sm:px-16 rounded-lg w-full flex items-center justify-center sm:w-auto highlight-white/20 '
               href={"/Team"}
             passHref>
             See All 
-          </a>
+          </Link>
         </div></div>
 
         </div>{" "}
