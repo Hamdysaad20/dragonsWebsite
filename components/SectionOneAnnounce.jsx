@@ -45,17 +45,22 @@ let distnationPartner = props.partner;
           <div className='mt-6  mx-12 sm:mx-0   sm:mt-10  sm:flex justify-center  md:justify-center lg:justify-start  sm:space-x-6 text-sm'>
             <Link legacyBehavior
               aria-label='Get Started'
-              className='select-none max-w-sm font-bold box-decoration-slice shadow-lg hover:shadow-red-500/50     focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 active:scale-95 duration-100 focus:ring-offset-slate-800   h-12 px-6 rounded-lg w-full flex items-center text-white justify-center sm:w-auto bg-red-500  hover:bg-red-400'
               href={props.action}
               passHref>
-              {props.ActionButton}
-            </Link>
+                <div               className='select-none max-w-sm font-bold box-decoration-slice shadow-lg hover:shadow-red-500/50     focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 active:scale-95 duration-100 focus:ring-offset-slate-800   h-12 px-6 rounded-lg w-full flex items-center text-white justify-center sm:w-auto bg-red-500  hover:bg-red-400'
+>
+{props.ActionButton}
+  
+</div>
+           </Link>
             <Link legacyBehavior
               aria-label='Our Services'
-              className='select-none font-bold max-w-sm  bg-white mt-4 sm:mt-0 shadow-md  hover:shadow-red-500/50  ring-2  ring-slate-900 hover:bg-gray-300 focus:outline-none focus:ring-2 opacity-90  focus:ring-offset-2 active:scale-95 duration-100 0  text-gray-900  h-12 px-3  sm:px-16 rounded-lg w-full flex items-center justify-center sm:w-auto highlight-white/20 '
               href={props.action2}
               passHref>
-              {props.ActionButton2}
+                <div               className='select-none font-bold max-w-sm  bg-white mt-4 sm:mt-0 shadow-md  hover:shadow-red-500/50  ring-2  ring-slate-900 hover:bg-gray-300 focus:outline-none focus:ring-2 opacity-90  focus:ring-offset-2 active:scale-95 duration-100 0  text-gray-900  h-12 px-3  sm:px-16 rounded-lg w-full flex items-center justify-center sm:w-auto highlight-white/20 '
+>             {props.ActionButton2}
+ </div>
+ 
             </Link>
           </div>
         </div>
