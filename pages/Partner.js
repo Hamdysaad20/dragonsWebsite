@@ -9,7 +9,6 @@ function Partner() {
     const [nameRing, setnameRing] = useState(false);
     const [emailRing, setemailRing] = useState(false);
     const [messageRing, setmessageRing] = useState(false);
-    const [number, setNumber] = useState(false);
     const [ID, setID] = useState(false);
     const [btnIsActive, setbtnIsActive] = useState(true);
     const [count, setCount] = useState(0);
@@ -129,7 +128,6 @@ function Partner() {
                 setnameRing(!nameRing);
                 setemailRing(false);
                 setmessageRing(false);
-                setNumber(false);
                 setID(false);
               }}
               className={`
@@ -151,7 +149,6 @@ function Partner() {
                 setemailRing(!emailRing);
                 setnameRing(false);
                 setmessageRing(false);
-                setNumber(false);
                 setID(false);
               }}
               className={`
@@ -178,7 +175,6 @@ function Partner() {
                 setmessageRing(!messageRing);
                 setnameRing(false);
                 setemailRing(false);
-                setNumber(false);
               }}
               className={`
                           w-full mt-2 z-50 rounded-md min-h-32 h-32  overflow-hidden duration-300 hover:overflow-y-scroll max-h-64 px-2 py-1 text-gray-400 bg-gray-700/20

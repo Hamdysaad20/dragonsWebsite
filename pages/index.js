@@ -56,7 +56,7 @@ export default function Home() {
         partner="/Partner"
         action="/Join"
         ActionButton="Join Us"
-        action2="https://chat.whatsapp.com/Bus9DexN6ueD7GegIkbHbz"
+        action2="https://chat.whatsapp.com/EBstbSoXHg63rZ5HiomOT0"
         ActionButton2="Whatsapp Group 👨🏻‍🚀"
         
         />
@@ -68,7 +68,7 @@ export default function Home() {
       <div className="flex  justify-center mx-auto">
       <Image
                   className='relative z-20  bounce-2 box2  '
-                  src={"/images/logo.png"}
+                  src={"/images/dragonsEG2023.png"}
                   alt='Header Image'
                   height='240'
                   width='240'
@@ -79,18 +79,7 @@ export default function Home() {
       </div>
      
       <div className=" mb-96">
-      <div className="flex justify-center pt-1  mx-auto">
-      <Image
-                  className='relative z-20  bounce-2 box2  '
-                  src={"/images/logotext.png"}
-                  alt='Header Image'
-                  height='60'
-                  width='240'
-                  placeholder='blur'
-                  blurDataURL={`/_next/image?url=/ico/S1.png&w=16&q=1`}
-                  priority
-                />
-      </div>
+     
       
       </div>
 

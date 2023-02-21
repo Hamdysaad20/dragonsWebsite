@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
           content='Dragons'
           key='Dragons'
         />       
-        <link rel='shortcut icon' href='/images/logol.png' />
+        <link rel='shortcut icon' href='/images/dragonsEG.png' />
       </Head>
       <Header
         className='select-none'
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
         HerfActivity='/Activities'
         HerfService='/Team'
         herflogoLink="/"
-        herflogo='/images/logo.png'
+        herflogo='/images/dragonsEG.png'
         herflogo2='/images/logotext.png'
       />
       <Component {...pageProps} />
