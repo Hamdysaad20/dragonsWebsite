@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './../../components/profile/header';
+import Header from './../../components/profile/Header';
 // info area
 // user act
 // 

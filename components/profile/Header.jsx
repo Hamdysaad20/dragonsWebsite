@@ -2,7 +2,7 @@ import React from 'react'
 import TapsH from './TapsH';
 import Userinfo from './userinfo';
 
-function header() {
+function Header() {
   return (
 <div className='w-full'>
 <TapsH/>
@@ -12,4 +12,4 @@ function header() {
   )
 }
 
-export default header
+export default Header
