@@ -1,6 +1,6 @@
 import React from 'react'
 import TapsH from './TapsH';
-import Userinfo from './userinfo';
+import Userinfo from './Userinfo';
 
 function Header() {
   return (
