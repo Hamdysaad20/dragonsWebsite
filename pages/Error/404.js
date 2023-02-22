@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Lottie from "lottie-react";
 
-import celebrate from "../public/JSON/404.json";
+import celebrate from "../../public/JSON/404.json";
 function Custom404() {
   const lottieRef = useRef();
   async function hoverevent() {
@@ -26,7 +26,7 @@ function Custom404() {
             style={{ fontFamily: "Poppins-Bold", width: "400" }}
             className='font-medium text-2xl text-center absolute  bottom-[20%] max-w-[400px] '>
             <span className='text-purple-600'> OOPS! PAGE NOT FOUND. </span> You
-            must have picked the wrong door 😲
+                   must have picked the wrong door 😲
           </h1>
         </div>
         <div className='absolute z-50 bottom-12 lg:bottom-44'>
