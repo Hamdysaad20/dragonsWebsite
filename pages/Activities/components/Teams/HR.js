@@ -1,7 +1,7 @@
 import React from "react";
-import Styles from "../styles/Team.module.css";
+import Styles from "../../../../styles/Team.module.css";
 import Lottie from "lottie-react";
-import hand from "../public/JSON/hr.json";
+import hand from "../../../../public/JSON/hr.json";
 function HR() {
   return (
     <div className='pt-20 text-center  relative flex justify-center mx-auto flex-col max-w-[1400px]'>

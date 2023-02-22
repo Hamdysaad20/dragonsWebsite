@@ -1,16 +1,16 @@
 import React from "react";
-import CardActiv from "../components/CardActiv";
+import CardActiv from "./components/CardActiv";
 import { motion } from "framer-motion";
-import Styles from "../styles/Team.module.css";
+import Styles from "../../styles/Team.module.css";
 import Lottie from "lottie-react";
-import dragchil from "../public/JSON/dragchil.json";
-import FE from "../public/JSON/FE";
-import be from "../public/JSON/be";
-import hr from "../public/JSON/hr";
-import media from "../public/JSON/media";
-import pr from "../public/JSON/pr";
-import ps from "../public/JSON/ps";
-import main from "../public/JSON/activMain.json";
+import dragchil from "../../public/JSON/dragchil.json";
+import FE from "../../public/JSON/FE.json";
+import be from "../../public/JSON/be.json";
+import hr from "../../public/JSON/hr.json";
+import media from "../../public/JSON/media.json";
+import pr from "../../public/JSON/pr.json";
+import ps from "../../public/JSON/ps.json";
+import main from "../../public/JSON/activMain.json";
 
 function Activities() {
   return (
