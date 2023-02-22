@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import hand from "../public/JSON/68978-3d-hand.json";
+import hand from "../../../public/JSON/68978-3d-hand.json";
 
 function FormSideSection() {
   return (

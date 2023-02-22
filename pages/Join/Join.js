@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import styles from "../styles/Home.module.css";
-import Form from "../components/Form";
-import FormSideSection from "../components/FormSideSection";
+import styles from "../../styles/Home.module.css";
+import Form from "./components/Form";
+import FormSideSection from "./components/FormSideSection";
 function Join() {
     
   return (
