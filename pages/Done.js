@@ -4,19 +4,19 @@ import Router from "next/router";
 
 import celebrate from "../public/JSON/celebrate.json";
 function Done() {
-  useEffect(() => {
-    setTimeout(() => {
-      const { pathname } = Router;
-      Router.push("/");
-    }, 5000);
-  }, []);
-  const lottieRef = useRef();
-  async function hoverevent() {
-    lottieRef.current.setSpeed(0.3);
-  }
-  async function hovereventends() {
-    lottieRef.current.setSpeed(1);
-  }
+    useEffect(() => {
+      setTimeout(() => {
+        const { pathname } = Router;
+        Router.push("/");
+      }, 5000);
+    }, []);
+    const lottieRef = useRef();
+    async function hoverevent() {
+      lottieRef.current.setSpeed(0.3);
+    }
+    async function hovereventends() {
+      lottieRef.current.setSpeed(1);
+    }
   return (
     <div>
       <div className=' flex justify-center mx-auto'>
@@ -25,7 +25,7 @@ function Done() {
           <h1
             style={{ fontFamily: "Poppins-Bold", width: "400" }}
             className='font-medium text-2xl text-center  max-w-[400px] '>
-            Redirect in 5 seconds ...{" "}
+             Redirect in 5 seconds ...{" "}
           </h1>
           <Lottie
             onMouseOver={hoverevent}

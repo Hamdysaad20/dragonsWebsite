@@ -1,5 +1,5 @@
 import React, { useRef ,useState} from 'react'
-import FormSideSection from "../components/FormSideSection";
+import FormSideSection from "./Join/components/FormSideSection";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 
@@ -12,8 +12,6 @@ function Partner() {
     const [ID, setID] = useState(false);
     const [btnIsActive, setbtnIsActive] = useState(true);
     const [count, setCount] = useState(0);
-
-
     const sendEmail = (e) => {
         e.preventDefault();
         setbtnIsActive(false);
@@ -73,51 +71,36 @@ function Partner() {
 
   return (
     <div>
-<div className={`${""}${styles.container}`}>
-      <motion.div
-        initial='hidden'
-        animate='visible'
-        variants={{
-          hidden: {
-            scale: 1,
-            opacity: 0.0,
-          },
-          visible: {
-            scale: 1,
-            opacity: 1,
-            transition: {
-              delay: 0.1,
-            },
-          },
-        }}>
+       <div className={`${""}${styles.container}`}>
+              <motion.div
+                initial='hidden'
+                animate='visible'
+                variants={{
+                  hidden: {
+                    scale: 1,
+                    opacity: 0.0,
+                  },
+                  visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                      delay: 0.1,
+                    },
+                  },
+                }}>
         <div className='grid pt-20 place-items-center mb-20 lg:grid-flow-col grid-flow-row'>
-          <div>
-           
-
-          <FormSideSection />
-
-
-
-
-
-
-          </div>
-          
-
-
-
-
-
-
+              <div>
+              <FormSideSection />
+              </div>
           <form
-        ref={form}
-        onSubmit={sendEmail}
-        className='flex  flex-col my-12  items-center justify-center'>
-        <h4
-          style={{ fontFamily: "Poppins-Bold", width: "400" }}
-          className='px-1 pb-2 text-gray-400  text-center  md:text-xl lg:text-2xl text-lg font-bold'>
-         Let&lsquo;s chat 😊
-        </h4>
+            ref={form}
+            onSubmit={sendEmail}
+            className='flex  flex-col my-12  items-center justify-center'>
+            <h4
+              style={{ fontFamily: "Poppins-Bold", width: "400" }}
+              className='px-1 pb-2 text-gray-400  text-center  md:text-xl lg:text-2xl text-lg font-bold'>
+             Let&lsquo;s chat 😊
+            </h4>
         <div
           style={{ fontFamily: "Poppins-Bold", width: "400" }}
           className='flex flex-col lg:w-[500px] min-w-[300px] text-white rounded-md bg-gray-800/50 p-2 items-center justify-center'>
@@ -140,7 +123,7 @@ function Partner() {
               maxLength='20'
               required
             />
-          </div>
+       </div>
           <div className='w-full '>
             <p className='text-left ml-1 my-1'>Email* </p>
 
@@ -208,13 +191,8 @@ function Partner() {
             />
           )}
         
-</div>
-</form>
-
-
-
-
-          
+    </div>
+ </form>
         </div>{" "}
       </motion.div>
     </div>  

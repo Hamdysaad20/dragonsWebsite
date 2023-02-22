@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './../../components/profile/Header';
+import Header from '../../components/profile/Header';
 // info area
 // user act
 // 
@@ -7,7 +7,7 @@ import Header from './../../components/profile/Header';
 
 function profile() {
   return (
-  <div class="pt-20 max-w-[1400px] flex mx-auto justify-center ">
+  <div className="pt-20 max-w-[1400px] flex mx-auto justify-center ">
     
  <div className="w-full">
  <Header/>
