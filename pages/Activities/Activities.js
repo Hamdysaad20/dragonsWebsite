@@ -1,5 +1,5 @@
 import React from "react";
-import CardActiv from "./components/CardActiv";
+import CardActiv from "./components/Teams/CardActiv";
 import { motion } from "framer-motion";
 import Styles from "../../styles/Team.module.css";
 import Lottie from "lottie-react";
@@ -15,7 +15,7 @@ import main from "../../public/JSON/activMain.json";
 function Activities() {
   return (
     <div className='pt-20  relative flex justify-center mx-auto flex-col max-w-[1400px]'>
-      <div class='grid mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
+      <div className='grid mt-12 place-items-center text-xl font-bold md:text-3xl lg:text-7xl'>
         <div className='max-w-[500px]'>
           {" "}
           <Lottie animationData={main} />{" "}
@@ -26,8 +26,8 @@ function Activities() {
         <div className='rotate-45 z-10 hover:rotate-90  hidden md:block h-[250px] opacity-60 hover:opacity-90 hover:scale-90 duration-500 absolute top-16 left-0 w-[250px]'>
           <Lottie animationData={dragchil} />{" "}
         </div>{" "}
-        <p class={`${"z-20"}${Styles.pHeaderTeam}`}>
-          <span class={Styles.SpanHeaderTeam}> Our main Activities </span>
+        <p className={`${"z-20"}${Styles.pHeaderTeam}`}>
+          <span className={Styles.SpanHeaderTeam}> Our main Activities </span>
         </p>
       </div>
 
@@ -50,37 +50,37 @@ function Activities() {
         <div className='w-full flex-wrap gap-3 mb-20 mt-12 max-w-[1400px] flex mx-auto justify-center '>
           <CardActiv
             name='Frontend Development'
-            pass={"/frontend"}
+            pass={"components/Teams/frontend"}
             jsonSVG={FE}
             isTech={true}
           />
           <CardActiv
             name='Backend Development'
-            pass={"/backend"}
+            pass={"components/Teams/backend"}
             jsonSVG={be}
             isTech={true}
           />
           <CardActiv
             name='Human Resource'
-            pass={"/HR"}
+            pass={"components/Teams/HR"}
             jsonSVG={hr}
             isTech={false}
           />
           <CardActiv
             name='Media'
             jsonSVG={media}
-            pass={"/Media"}
+            pass={"components/Teams/Media"}
             isTech={false}
           />
           <CardActiv
             name='Public Relations '
-            pass={"/PR"}
+            pass={"components/Teams/PR"}
             jsonSVG={pr}
             isTech={false}
           />
           <CardActiv
             name='Problem Solving '
-            pass={"/PS"}
+            pass={"components/Teams/PS"}
             jsonSVG={ps}
             isTech={true}
           />
