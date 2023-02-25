@@ -12,7 +12,7 @@ function Taps() {
 
 
   return (
-    <div className='flex w-full h-24  overflow-x-auto  overflow-hidden  select-none relative'>
+    <div  className='flex w-full h-24  overflow-x-auto  overflow-hidden  select-none relative'>
 <div className=' md:justify-center  h-12  mx-auto w-full flex gap-2 mb-1  bottom-0 absolute '>
 
 {navProfile.map((item) => (

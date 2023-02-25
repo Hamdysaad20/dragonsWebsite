@@ -4,7 +4,7 @@ import Userinfo from './Userinfo';
 
 function Header() {
   return (
-<div className='w-full'>
+<div className='w-full h-full'>
 <TapsH/>
 
 <Userinfo/>
