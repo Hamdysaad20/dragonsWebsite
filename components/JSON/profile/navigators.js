@@ -20,7 +20,7 @@ const navProfile=[{
 
    
     "name": "Meetings",
-    "link": "/profile/meetings",
+    "link": "/meetings",
     "iconSvg": (   
         <svg width="30px" height="30px"  viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.15" d="M3 6.5C3 5.94772 3.44772 5.5 4 5.5H15C15.5523 5.5 16 5.94772 16 6.5V17.5C16 18.0523 15.5523 18.5 15 18.5H4C3.44772 18.5 3 18.0523 3 17.5V6.5Z" fill="#ffffff" />
@@ -34,7 +34,7 @@ const navProfile=[{
 
     
     "name": "Blogs",
-    "link": "/profile/blogs",
+    "link": "/blogs",
     "iconSvg": (   <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path opacity="0.15" d="M21 18V12H16L14 15H10L8.5 12H3V18C3 19.1046 3.89543 20 5 20H19C20.1046 20 21 19.1046 21 18Z" fill="#ffffff" />
     <path d="M3 12H8.5L10 15H14L16 12H21M3 12V18C3 19.1046 3.89543 20 5 20H19C20.1046 20 21 19.1046 21 18V12M3 12L5.75667 4.64888C5.90304 4.25857 6.27616 4 6.693 4H17.307C17.7238 4 18.097 4.25857 18.2433 4.64888L21 12" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -48,7 +48,7 @@ const navProfile=[{
 
     
     "name": "Photos",
-    "link": "/profile/photos",
+    "link": "/photos",
     "iconSvg": (  
         <svg width="30px" height="30px" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.15" d="M4 5C4 4.44772 4.44772 4 5 4H19C19.5523 4 20 4.44772 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5Z" fill="#ffffff"/>
@@ -63,7 +63,7 @@ const navProfile=[{
 
 
     "name": "Slideshows",
-    "link": "/profile/slideshows",
+    "link": "/slideshows",
     "iconSvg": (
         <svg  width="30px" height="30px" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
         <path d="M5.89999 17H18.09C19.99 17 20.99 16 20.99 14.1V2H2.98999V14.1C2.99999 16 3.99999 17 5.89999 17Z" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
