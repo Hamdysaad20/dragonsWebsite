@@ -21,15 +21,15 @@ function Stars(props) {
 />
 
 </div>
-<div className="bg-gray-700/40 z-30 hover:bg-gray-600/40 duration-500  rounded-lg   pr-3 pt-2     m-5">
+<div className="bg-gray-700/40 z-30 hover:bg-gray-600/40 duration-500  overflow-hidden rounded-lg   pr-3 pt-2     m-5">
 
-<div className='min-h-[30px]  flex '>
+<div className='min-h-[30px]  flex  '>
 <div className='h-9 w-9  absolute bg-gray-700/40 rounded-full top-1 left-1  md:top-0 md:left-0 '>
     <Lottie animationData={props.animatedlogo} />
 <div className="grid place-items-center pt-[6px]">    {props.teamico}
 </div>
     </div>
-    <h1 style={{ fontFamily: "Poppins-Bold"}}  className='md:text-lg pb-2 text-base pl-3 font-bold'><span className="md:text-3xl text-2xl text-yellow-300">{props.HighlightsNum}</span> {props.HighlightsText}</h1>
+    <h1 style={{ fontFamily: "Poppins-Bold"}}  className='md:text-lg text-center pb-2 text-base pl-3 font-bold'><span className="md:text-3xl text-2xl text-yellow-300">{props.HighlightsNum}</span> {props.HighlightsText}</h1>
 
 </div>
 

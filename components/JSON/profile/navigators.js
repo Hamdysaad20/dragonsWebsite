@@ -1,5 +1,7 @@
 const navProfile = [
+
   {
+ 
     name: "Overview",
     link: "/users/profile",
     iconSvg: (
@@ -232,5 +234,6 @@ const navProfile = [
       </svg>
     ),
   },
+
 ];
 export default navProfile;

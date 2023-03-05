@@ -4,7 +4,7 @@ const teamData=[ {
     ,herfGithub:'https://github.com/Hamdysaad20'
     , name:'Hamdy Saad'
     ,work:'Sr.Frontend Engineer'
-   , image:"/images/20221210_190712.jpg"
+   , image:"/images/HamdySaad.jpg"
   ,  Pos:'CO-Founder/CTO'
   },
   {
