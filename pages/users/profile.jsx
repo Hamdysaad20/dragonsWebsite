@@ -7,7 +7,7 @@ import Header from './../../components/profile/Header';
 
 function profile() {
   return (
-  <div class="pt-20 max-w-[1400px] h-full flex mx-auto justify-center ">
+  <div className="pt-20 pb-40 max-w-[1400px] h-full flex mx-auto justify-center ">
     
  <div className="w-full h-full">
  <Header/>

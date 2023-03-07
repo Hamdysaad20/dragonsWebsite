@@ -15,9 +15,9 @@ function Taps() {
     <div  className='flex w-full h-24  overflow-x-auto scrollbar-hide overflow-hidden  select-none relative'>
 
 <div className=' md:justify-center scrollbar-hide  h-12  mx-auto w-full flex gap-2 mb-1  bottom-0 absolute '>
-{navProfile.map((item) => (
+{navProfile.map((item,index) => (
 
-<div key={item} className={`${routerasString == item.link? " border-red-600 border-b-4 ":" "}${' p-[5px] cursor-pointer '}`} >
+<div key={index} className={`${routerasString == item.link? " border-red-600 border-b-4 ":" "}${' p-[5px] cursor-pointer '}`} >
   <div   onClick={() => Routercontroler.push(routerasString+item.link)}
   >
 <div className='  bg-gray-900/40 duration-300  hover:bg-gray-700/40 backdrop-blur-sm min-w-24 px-2 h-full rounded-lg    grid place-items-center'>

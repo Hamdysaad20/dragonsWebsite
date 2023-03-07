@@ -3,14 +3,16 @@ import React from "react";
 import Highlights from "./Highlights";
 import fullScreen from "./fullScreen";
 import { useRouter } from 'next/router';
-
 import user from "../JSON/profile/user"
+
+import UserStatus from "./status/UserStatus";
+import ImagesForOverView from "./ImagesForOverView";
 
 function Userinfo() {
   const routerasString = useRouter().pathname;
   const Routercontroler= useRouter();
   return (
-    <div className='w-full mt-12 relative rounded-t-2xl  bg-gray-800/40 backdrop-blur-lg border-2 border-b-0 border-white'>
+    <div className='w-full mt-12 relative rounded-t-2xl    bg-gray-800/40 backdrop-blur-lg border-2 border-b-0 border-white'>
       <div className='p-3 flex flex-wrap md:flex-nowrap md:flex-cols  '>
         <div className='ml-0 relative flex gap-3 md:flex-col'>
           <div className='rounded-3xl -mt-[50px] relative select-none  md:h-64 h-32 w-32 md:w-64'>
@@ -71,57 +73,58 @@ function Userinfo() {
         </div>
 
         <div className='mr-0 w-full      '>
-          <div className=' h-full mt-3'>
+          <div className=' h-full mt-3  '>
             <div className="flex justify-center">
               <h1 style={{ fontFamily: "dragons"}} className=" text-7xl">Highlight</h1>
             </div>
             <Highlights />
-            <div className="flex gap-2 relative pb-12  justify-center flex-wrap">
-         {user.slice(0,5).map((item,index)=>(
-           <div key={item} className="bg-red-900 relative h-44 rounded-lg w-44">
-            <Image  
-                src={item.image}
-                className='w-full rounded-lg  h-full select-none'
-                layout='fill'
-                alt='Core Team'
-                priority
-                placeholder="blur"
-                blurDataURL='/images/HamdySaad.jpg'
-
-      
-              />
+            <ImagesForOverView Routercontroler={Routercontroler} routerasString={routerasString} user={user}/>
+        
+        
+         <div className=" w-full   flex justify-center">
+         <div className="flex flex-wrap-reverse xl:justify-between justify-center mx-auto  w-[830px] ">
+          <div>
+          <div className="flex  gap-1 pt-3">
+                 <svg 
+                 className="pt-[3px]"
+        width='20px'
+        height='20px'
+        viewBox='0 0 24 24'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'>
+        <g id='SVGRepo_bgCarrier' strokeWidth={0} />
+        <g
+          id='SVGRepo_tracerCarrier'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+        />
+        <g id='SVGRepo_iconCarrier'>
+          {" "}
+          <rect
+            width={18}
+            height={18}
+            transform='matrix(4.37114e-08 -1 -1 -4.37114e-08 24 24)'
+            fill=''
+          />{" "}
+          <path
+            fillRule='evenodd'
+            clipRule='evenodd'
+            d='M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM10.5066 6.65264C11.0199 5.26682 12.98 5.26683 13.4933 6.65264L14.1209 8.34727C14.2662 8.73956 14.6403 8.99995 15.0586 8.99995L16.5269 8.99995C17.9614 8.99995 18.6798 10.7343 17.6655 11.7487L16.1306 13.2835C15.8942 13.52 15.7915 13.8589 15.8571 14.1868L16.2262 16.0319C16.4943 17.3727 15.0333 18.3872 13.8707 17.6675L12.5263 16.8352C12.2038 16.6356 11.7961 16.6356 11.4736 16.8352L10.1292 17.6675C8.96662 18.3872 7.5056 17.3727 7.77375 16.0319L8.14279 14.1868C8.20836 13.8589 8.10574 13.52 7.86931 13.2835L6.29284 11.7071C5.29385 10.7081 6.00138 8.99995 7.41416 8.99995L8.94126 8.99995C9.35959 8.99995 9.73371 8.73956 9.87901 8.34727L10.5066 6.65264Z'
+            fill='rgb(156 163 175)'
+          />{" "}
+        </g>
+      </svg>
+      <h1 className="text-left  text-gray-400">
+             
+              latest activites</h1>
+              </div>
+            <div className="h-12 bg-red-300 w-40">sds</div>
           </div>
 
-         ))}
-
-<div onClick={() => Routercontroler.push(routerasString+"/photos")} className="absolute bottom-0 bg-green-400/40  hover:bg-green-400/20 duration-500 rounded-[10px] font-bold select-none cursor-pointer p-2">See More</div>
-<div className="xl:flex flex-col hidden  justify-between">
-
-
-{user.slice(5,7).map((item)=>(
-
-          <div key={item} className="bg-red-900 h-20 relative rounded-lg w-20">
-            <Image  
-                src={item.image}
-                className='w-full rounded-lg   h-full select-none'
-                layout='fill'
-                alt='Core Team'
-                priority
-                placeholder="blur"
-                blurDataURL='/images/HamdySaad.jpg'
-
-      
-              />
+          <UserStatus/>
           </div>
 
-         ))}
-
-
-
-
-</div>
-
-            </div>
+         </div>
           </div>
           
         </div>
