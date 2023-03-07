@@ -10,7 +10,7 @@ function ImagesForOverView(props) {
 <div style={{fontFamily:"Poppins-Bold"}} onClick={() => props.Routercontroler.push(props.routerasString+"/photos")} className="absolute top-1  left-1    text-white duration-500 m-1 font-bold select-none text-xl  p-[3px] px-[7px]">Photos</div>
 
          {props.user.slice(0,4).map((item,index)=>(
-           <div key={index} className="bg-red-900 relative h-44 rounded-lg w-44">
+           <div key={index} className="bg-red-900 relative lg:h-44 h-32 w-32 rounded-lg lg:w-44">
             <Image  
                 src={item.image}
                 className='w-full rounded-lg  h-full select-none'
