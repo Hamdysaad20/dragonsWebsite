@@ -29,6 +29,9 @@ Filler: {
   responsive: true,
 
   scale: {
+
+
+
     gridLines: {
       lineWidth: 2,
       color: "#97ba7b"
@@ -37,15 +40,8 @@ Filler: {
     },
     
     ticks: {
-      fontSize: 18,
+      display: false
 
-      min: 0,
-      max: 100,
-      stepSize: 2,
-      showLabelBackdrop: true,
-      backdropColor: "rgba(255, 255, 255, 0.3)",
-      borderColor: "#fff",
-      
     },
     angleLines: {
       color: "#fff",
@@ -65,7 +61,6 @@ ChartJS.defaults.borderWidth = 2;
 
 
 
-
  class RadarChart extends React.Component {
   constructor(props) {
     super(props);
@@ -78,7 +73,7 @@ ChartJS.defaults.borderWidth = 2;
 
   render() {
     return (
-<div className="h-60 w-60   p-4 text-w lg:h-96 lg:w-96">
+<div className="h-[280px] w-[280px]   p-4 text-w lg:h-96 lg:w-96">
 <Radar   ref={this.chartRef} data={RadarData} options={RadarOptions} />
 
 </div>
