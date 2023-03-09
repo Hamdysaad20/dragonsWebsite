@@ -3,7 +3,7 @@ const navProfile = [
   {
  
     name: "Overview",
-    link: "/users/profile",
+    link: "/users/Profile",
     iconSvg: (
       <svg
         width='27px'
