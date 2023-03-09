@@ -219,7 +219,7 @@ const navProfile = [
         />
         <g id='SVGRepo_iconCarrier'>
           {" "}
-          <rect width={24} height={24} fill='#121212' />{" "}
+          <rect width={24} height={24}  />{" "}
           <path
             fillRule='evenodd'
             clipRule='evenodd'

@@ -21,7 +21,9 @@ function Profile() {
     
  <Header  routerasString={routerasString} Routercontroler={Routercontroler}/>
  </NoSSRCompParent>
+ <hr/>
  </div>
+ 
   </div>
     )
 }
