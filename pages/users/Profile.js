@@ -4,8 +4,17 @@ import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic'
 import user from '../../components/JSON/profile/user'; 
 import TapsH from '../../components/profile/TapsH';
-const ComponentOverView = dynamic(() => import('../../components/profile/[profileNav]/Overview.jsx'))
+import Lottie from "lottie-react";
+import loadingJSON from '../../public/JSON/load.json';
+const ComponentOverView = dynamic(() => import('../../components/profile/[profileNav]/Overview.jsx'),{
+
+  loading: ()=>(     <Lottie
+
+  animationData={loadingJSON}
+/>)
+})
 import Userinfo from '../../components/profile/Userinfo';
+
 
 function Profile() {
   let demoData =[["1","2","3"],["4","5"]]
