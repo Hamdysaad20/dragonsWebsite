@@ -1,11 +1,11 @@
 import React from 'react'
-import NoSSRCompParent from '../../../components/NoSSRCompParent';
+import NoSSRCompParent from '../../components/NoSSRCompParent';
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic'
-import user from '../../../components/JSON/profile/user'; 
-import TapsH from '../../../components/profile/TapsH';
-const ComponentOverView = dynamic(() => import('../../../components/profile/[profileNav]/Overview.jsx'))
-import Userinfo from './../../../components/profile/Userinfo';
+import user from '../../components/JSON/profile/user'; 
+import TapsH from '../../components/profile/TapsH';
+const ComponentOverView = dynamic(() => import('../../components/profile/[profileNav]/Overview.jsx'))
+import Userinfo from '../../components/profile/Userinfo';
 
 function Profile() {
   let demoData =[["1","2","3"],["4","5"]]

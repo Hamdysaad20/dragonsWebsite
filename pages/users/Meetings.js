@@ -1,12 +1,12 @@
 import React from 'react'
-import NoSSRCompParent from '../../../../components/NoSSRCompParent'
-import TapsH from '../../../../components/profile/TapsH';
-import Userinfo from '../../../../components/profile/Userinfo';
+import NoSSRCompParent from '../../components/NoSSRCompParent'
+import TapsH from '../../components/profile/TapsH';
+import Userinfo from '../../components/profile/Userinfo';
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic'
-import user from '../../../../components/JSON/profile/user'; 
+import user from '../../components/JSON/profile/user'; 
 function index() {
-  const ComponentOverView = dynamic(() => import('../../../../components/profile/[profileNav]/Meeting.jsx'))
+  const ComponentOverView = dynamic(() => import('../../components/profile/[profileNav]/Meeting.jsx'))
 
 
     const routerasString = useRouter().pathname;
