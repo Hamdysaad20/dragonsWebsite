@@ -3,7 +3,7 @@ const navProfile = [
   {
  
     name: "Overview",
-    link: "/users/Profile",
+    link: "/Profile",
     iconSvg: (
       <svg
         width='27px'
@@ -40,7 +40,7 @@ const navProfile = [
 
   {
     name: "Meetings",
-    link: "/meetings",
+    link: "/Meetings",
     iconSvg: (
       <svg
         width='30px'

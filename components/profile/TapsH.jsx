@@ -7,7 +7,7 @@ function Taps() {
   const routerasString = useRouter().pathname;
   const Routercontroler= useRouter();
 
-
+let UserID ="users/Profile"
 
 
 
@@ -18,7 +18,7 @@ function Taps() {
 {navProfile.map((item,index) => (
 
 <div key={index} className={`${routerasString == item.link? " border-red-600 border-b-4 ":" "}${' p-[5px] cursor-pointer '}`} >
-  <div   onClick={() =>item.link==routerasString?null :Routercontroler.push(routerasString+item.link)}
+  <div   onClick={() =>Routercontroler.push(UserID+item.link)}
   >
 <div className='  bg-gray-900/40 duration-300  hover:bg-gray-700/40 backdrop-blur-sm min-w-24 px-2 h-full rounded-lg    grid place-items-center'>
            <div className='flex gap-1'>
