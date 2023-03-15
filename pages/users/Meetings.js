@@ -5,7 +5,7 @@ import Userinfo from '../../components/profile/Userinfo';
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic'
 import user from '../../components/JSON/profile/user'; 
-function index() {
+function Meetings() {
   const ComponentOverView = dynamic(() => import('../../components/profile/[profileNav]/Meeting.jsx'))
 
 
@@ -49,4 +49,4 @@ return (
   )
 }
 
-export default index
+export default Meetings
