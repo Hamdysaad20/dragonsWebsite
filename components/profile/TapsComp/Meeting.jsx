@@ -1,5 +1,5 @@
 import React from 'react'
-import MeetingComp from './../MeetingComp';
+import MeetingComp from '../MeetingComp';
 
 function Meeting(props) {
   return (

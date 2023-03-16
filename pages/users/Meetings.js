@@ -9,7 +9,7 @@ import Lottie from "lottie-react";
 import loadingJSON from "../../public/JSON/load.json";
 function Meetings() {
   const ComponentOverView = dynamic(
-    () => import("../../components/profile/[profileNav]/Meeting.jsx"),
+    () => import("../../components/profile/TapsComp/Meeting.jsx"),
     {
       loading: () => <Lottie animationData={loadingJSON} />,
     }

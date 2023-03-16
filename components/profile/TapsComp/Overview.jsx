@@ -1,8 +1,11 @@
 import React from 'react'
-import ActiviteyComp from '../../ActiviteyComp';
+import ActiviteyComp from '../../JSON/profile/status/ActiviteyComp';
 import ImagesForOverView from '../ImagesForOverView';
 import Highlights from '../Highlights';
-import UserStatus from '../status/UserStatus';
+import UserStatus from '../../JSON/profile/status/UserStatus';
+
+
+
 function Overview(props) {
   return (
     <div>

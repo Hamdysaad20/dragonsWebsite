@@ -6,7 +6,7 @@ import user from '../../components/JSON/profile/user';
 import TapsH from '../../components/profile/TapsH';
 import Lottie from "lottie-react";
 import loadingJSON from '../../public/JSON/load.json';
-const ComponentOverView = dynamic(() => import('../../components/profile/[profileNav]/Overview.jsx'),{
+const ComponentOverView = dynamic(() => import('../../components/profile/TapsComp/Overview'),{
 
   loading: ()=>(     <Lottie
 
