@@ -13,8 +13,7 @@ function ImagesForOverView(props) {
             <Image  
                 src={item.image}
                 className='w-full rounded-lg  h-full select-none'
-                layout='fill'
-                alt='Core Team'
+                fill                alt='Core Team'
                 priority
                 placeholder="blur"
                 blurDataURL='/images/HamdySaad.jpg'
@@ -34,7 +33,7 @@ function ImagesForOverView(props) {
             <Image  
                 src={item.image}
                 className='w-full rounded-lg   h-full select-none'
-                layout='fill'
+                fill
                 alt='Core Team'
                 priority
                 placeholder="blur"

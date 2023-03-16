@@ -1,16 +1,17 @@
 import React from 'react'
 import  navProfile  from '../JSON/profile/navigators';
 import { useRouter } from 'next/router';
+import  Link  from 'next/link';
 
 
 function Taps() {
   const routerasString = useRouter().pathname;
-  const Routercontroler= useRouter();
 
 let UserID ="users/Profile"
 
-
-
+function direction(link){
+  return `/${UserID}/${link}`
+}
   return (
     <div  className='flex w-full h-24  overflow-x-auto scrollbar-hide overflow-hidden  select-none relative'>
 
@@ -18,8 +19,8 @@ let UserID ="users/Profile"
 {navProfile.map((item,index) => (
 
 <div key={index} className={`${routerasString == item.link? " border-red-600 border-b-4 ":" "}${' p-[5px] cursor-pointer '}`} >
-  <div   onClick={() =>Routercontroler.push(UserID+item.link)}
-  >
+  <Link href={direction(item.link)}>
+  <div >
 <div className='  bg-gray-900/40 duration-300  hover:bg-gray-700/40 backdrop-blur-sm min-w-24 px-2 h-full rounded-lg    grid place-items-center'>
            <div className='flex gap-1'>
            <div>{item.iconSvg}</div>
@@ -27,7 +28,7 @@ let UserID ="users/Profile"
 
            </div>
         </div>
-        </div>
+        </div> </Link>
 </div>
 
 ))}

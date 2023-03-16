@@ -32,7 +32,7 @@ function Userinfo(props) {
                 <Image
                   src='/images/HamdySaad.jpg'
                   className='w-full rounded-3xl  md:rounded-[50px] h-full select-none'
-                  layout='fill'
+                  fill
                   alt='Core Team'
                   priority
                   placeholder='blur'
@@ -57,17 +57,22 @@ function Userinfo(props) {
             <div className='relative'>
               <div className='relative'>
                 <div className='flex min-w-20 justify-center mx-auto    md:justify-start  '>
-                  <div className='md:rounded-md flex gap-2  rounded-3xl p-2 px-2  bg-gray-900/40 duration-300  hover:bg-gray-700/40 backdrop-blur-sm'>
+                  <div className='md:rounded-md flex gap-2   rounded-3xl p-2 px-2  bg-gray-900/40 duration-300  hover:bg-gray-700/40 backdrop-blur-sm'>
                     {" "}
                     <h1 className='text-xl'>@username</h1>
-                    <Image
+                   <div className="relative w-auto h-auto pt-1 ">
+
+                   <Image
                       src='/images/discord.png'
-                      className='select-none'
-                      width={40}
-                      height={10}
+                      className='select-none w-auto h-auto'
+                    height={25}
+                    width={25}
                       alt='discord'
                       priority
-                    />
+                      responsive
+                                          />
+                   </div>
+            
                   </div>
                 </div>
               </div>

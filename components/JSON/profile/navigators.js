@@ -3,7 +3,7 @@ const navProfile = [
   {
  
     name: "Overview",
-    link: "/Profile",
+    link: "/",
     iconSvg: (
       <svg
         width='27px'
@@ -40,7 +40,7 @@ const navProfile = [
 
   {
     name: "Meetings",
-    link: "/Meetings",
+    link: "?tab=Meetings",
     iconSvg: (
       <svg
         width='30px'
@@ -65,7 +65,7 @@ const navProfile = [
   },
   {
     name: "Blogs",
-    link: "/blogs",
+    link: "?tab=blogs",
     iconSvg: (
       <svg
         width='30px'
@@ -90,7 +90,7 @@ const navProfile = [
   },
   {
     name: "Photos",
-    link: "/photos",
+    link: "?tab=photos",
     iconSvg: (
       <svg
         width='30px'
@@ -115,7 +115,7 @@ const navProfile = [
   },
   {
     name: "Slideshows",
-    link: "/slideshows",
+    link: "?tab=slideshows",
     iconSvg: (
       <svg
         width='30px'
@@ -168,7 +168,7 @@ const navProfile = [
   },
   {
     name: "Activity",
-    link: "/activity",
+    link: "?tab=activity",
 
     iconSvg: (
       <svg
@@ -203,7 +203,7 @@ const navProfile = [
   },
   {
     name: "Tasks",
-    link: "/tasks",
+    link: "?tab=tasks",
     iconSvg: (
       <svg
         width='30px'

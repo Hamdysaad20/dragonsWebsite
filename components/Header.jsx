@@ -35,23 +35,22 @@ function Header(props) {
         <Link href={props.herflogoLink} passHref>
           <div className='mt-2 flex gap-1 hover:opacity-50  duration-700  select-none cursor-pointer '>
             <Image
-              className='hover:animate-spin duration-500'
+              className='hover:animate-spin md:block hidden  duration-500'
               src={props.herflogo}
               alt='Dragons'
               height='50'
               width='50'
-              loading='eager'
+              priority
               quality={100}
             />{" "}
-            <div className='pt-2 '>
+            <div className='pt-[10px] '>
               <Image
                 className='  '
                 src={props.herflogo2}
                 alt='Dragons'
                 height='30'
                 width='120'
-                objectFit='fill'
-                loading='eager'
+                priority
                 quality={100}
               />{" "}
             </div>
