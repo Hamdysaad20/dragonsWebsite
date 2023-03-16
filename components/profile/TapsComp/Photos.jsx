@@ -11,20 +11,7 @@ function Photos(props) {
      <div className='flex flex-wrap justify-center'>
 
             
-         {props.latest.map((item,index)=>(
-          
-
-
-
- <MeetingComp key={index}
- ActivitesString={item}
- routerasString={props.routerasString}
- ActivitesStringP={item}
- Routercontroler={props.Routercontroler}
-/>
-
-
-                 ))}
+       
     </div>
 
    </div>
