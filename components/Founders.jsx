@@ -16,7 +16,7 @@ function founders() {
           <span  style={{ fontFamily: "dragons"}} >Founders</span>
         </p>
         <div className='relative h-[300px] w-[300px] hover:scale-110 duration-700'>
-          <Image className='z-20' src="/images/DragonsF.png" alt ="" layout='fill'/>
+          <Image className='z-20' src="/images/DragonsF.png" alt ="" fill/>
           <Lottie animationData={fire} />
 
           </div>
