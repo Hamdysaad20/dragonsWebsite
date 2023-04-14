@@ -2,16 +2,13 @@ import "../styles/globals.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-          <Head>
+      <Head>
         <title>Dragons</title>
-        <meta
-          property='og:Dragons'
-          content='Dragons'
-          key='Dragons'
-        />       
+        <meta property='og:Dragons' content='Dragons' key='Dragons' />
         <link rel='shortcut icon' href='/images/dragonsEG.png' />
       </Head>
       <Header
@@ -22,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         Herfabout='/about'
         HerfActivity='/Activities'
         HerfService='/Team'
-        herflogoLink="/"
+        herflogoLink='/'
         herflogo='/images/dragonsEG.png'
         herflogo2='/images/logotext.png'
       />
@@ -41,6 +38,8 @@ function MyApp({ Component, pageProps }) {
         </div>
       </div>
       <Footer />
+
+      <Analytics />
     </>
   );
 }
