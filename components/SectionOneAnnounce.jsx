@@ -17,7 +17,7 @@ let distnationPartner = props.partner;
     <div
       style={{ fontFamily: "Poppins, sans-serif" }}
       className={
-        "  max-w-[1400px] justify-center mx-auto grid grid-row-2 lg:grid-cols-5 text-gray-300 "
+        " max-w-[1400px] justify-center mx-auto grid grid-row-2 lg:grid-cols-5 text-gray-300 "
       }>
       <div className='relative col-span-3 '>
         <div className='sm:ml-7  text-center  md:text-left max-w-3xl mx-auto pt-32 sm:pt-60 md:pt-96 lg:pt-60'>

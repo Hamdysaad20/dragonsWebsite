@@ -1,47 +1,72 @@
 import "../styles/globals.css";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import HeaderComp from "../components/HeaderComp/Header";
 import Head from "next/head";
-import { Analytics } from "@vercel/analytics/react";
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <title>Dragons</title>
-        <meta property='og:Dragons' content='Dragons' key='Dragons' />
-        <link rel='shortcut icon' href='/images/dragonsEG.png' />
-      </Head>
-      <Header
-        className='select-none'
-        herfFacebook='https://www.facebook.com/profile.php?id=100086806926973'
-        herfGithub='https://github.com/DragonsEG'
-        HerfDash='/Join'
-        Herfabout='/about'
-        HerfActivity='/Activities'
-        HerfService='/Team'
-        herflogoLink='/'
-        herflogo='/images/dragonsEG.png'
-        herflogo2='/images/logotext.png'
-      />
-      <Component {...pageProps} />
-      <div id='wrap'>
-        <div id='lightings'>
-          <div id='one'>
-            <div id='two'>
-              <div id='three'>
-                <div id='four'>
-                  <div id='five'></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Footer />
+import {Partytown} from '@builder.io/partytown/react';
 
-      <Analytics />
-    </>
-  );
+
+function MyApp({Component, pageProps}) {
+
+    let nav_links = [
+        {
+            id: 1,
+            name: "Tracks",
+            link: "/tracks",
+        },
+        {
+            id: 2,
+            name: "Talents",
+            link: "/talents",
+        },
+        {
+            id: 3,
+            name: "Blog",
+            link: "/blog",
+        },
+        {
+            id: 4,
+            name: "Team",
+            link: "/Team",
+        },
+        {
+            id: 5,
+            name: "Contact",
+            link: "/contact",
+        },
+    ];
+    let Join = [
+        {
+            id: 1,
+            name: "Join Us",
+            link: "/Join",
+        }];
+
+    return (
+        <>
+
+            <Head>
+                <title>Dragons</title>
+                <meta
+                    property='og:Dragons'
+                    content='Dragons'
+                    key='Dragons'
+                />
+                <link rel='shortcut icon' href='/Identity/test.svg'/>
+                <Partytown debug={true} forward={['dataLayer.push']}/>
+            </Head>
+
+            <HeaderComp
+                nav_links={nav_links}
+                Join={Join}
+            />
+
+
+            <Component {...pageProps} />
+
+
+            <Footer/>
+        </>
+    );
 }
 
 export default MyApp;
