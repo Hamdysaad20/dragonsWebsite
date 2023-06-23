@@ -24,6 +24,7 @@
     "emailjs": "^4.0.1",
     "framer-motion": "^7.5.3",
     "fs": "^0.0.1-security",
+    "hawk": "^9.0.1",
     "hbo-dnsd": "^0.9.8",
     "jsdom": "^22.1.0",
     "linkedin-jobs-api": "^1.0.0",
