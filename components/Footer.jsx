@@ -10,7 +10,7 @@ function Footer() {
                 href='/'
                 passHref
                 className='text-xs sm:text-md text-white duration-500 hover:text-red-500'>
-                Dragons © - 2022 All Rights Reserved
+                DRAGONS BOOTCAMP LLC  © - 2022 All Rights Reserved
             </Link>
         </footer>
     );
